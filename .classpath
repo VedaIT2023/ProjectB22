@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Chandini/Basics"/>
+	<classpathentry kind="src" path="Chandini/Hospital/src"/>
+	<classpathentry kind="src" path="Chandini/Institutes/src"/>
+	<classpathentry kind="src" path="diwakar"/>
+	<classpathentry kind="src" path="kavitha"/>
+	<classpathentry excluding="ProjectInstitute/src/|ProjectCity/src/|Amigo/src/|ProjectHospitals/src/" kind="src" path="Narendra"/>
+	<classpathentry kind="src" path="Narendra/Amigo/src"/>
+	<classpathentry kind="src" path="Narendra/ProjectCity/src"/>
+	<classpathentry kind="src" path="Narendra/ProjectHospitals/src"/>
+	<classpathentry kind="src" path="Narendra/ProjectInstitute/src"/>
+	<classpathentry kind="src" path="satya"/>
+	<classpathentry kind="src" path="Sunanda Sri/Basics"/>
+	<classpathentry kind="src" path="Sunanda Sri/com.vedait.Hospitals/src"/>
+	<classpathentry kind="src" path="sunil"/>
+	<classpathentry kind="src" path="vali"/>
+	<classpathentry kind="output" path="Chandini/Hospital/bin"/>
+</classpath>

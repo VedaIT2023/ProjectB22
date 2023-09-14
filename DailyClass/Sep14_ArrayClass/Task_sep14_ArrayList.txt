@@ -1,0 +1,22 @@
+Create A Student Class with 6 properties
+Create below student objects in a for loop
+
+Balaji
+Chandini
+Divakar
+Kavitha
+Lakshman
+Mani
+Narendra
+Pavan
+Rama Krishna
+Sandeep
+Satish
+Satwik
+Satya
+Siddu
+Sindhu
+Sunanda
+Sunil
+Valli
+Kalyan
