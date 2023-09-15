@@ -2,8 +2,8 @@ package com.vedait.institute;
 
 public class Courses {
 	String cName;
-	String cFee;
-	public Courses(String cName,String cFee){
+	int cFee;
+	public Courses(String cName,int cFee){
 		this.cName=cName;
 		this.cFee=cFee;
 	}
