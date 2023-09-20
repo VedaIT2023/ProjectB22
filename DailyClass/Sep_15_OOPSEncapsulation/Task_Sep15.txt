@@ -1,0 +1,14 @@
+Create a function to print a random number between 1 to 10 
+
+Create a function to print a random number between 1 to 100 
+
+
+Ask the user to enter State code: 
+print State Name
+
+https://slusi.dacnet.nic.in/watershedatlas/list_of_state_abbreviation.htm
+
+Include all you previous packages in one project
+
+
+
