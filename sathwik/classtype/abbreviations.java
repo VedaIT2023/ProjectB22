@@ -1,5 +1,6 @@
 package classtype;
-import java.util.*;
+import java.util.Scanner;
+import java.util.HashMap;
 
 public class abbreviations {
 
