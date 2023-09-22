@@ -9,7 +9,7 @@ public class Numbers {
 	       	        int randomNumber = random.nextInt(10) + 1;
 
 	       
-	        System.out.println("Random number between : " + randomNumber);
+	        System.out.println("Random number between 1 to 10: " + randomNumber);
 	    }
 	}
 
