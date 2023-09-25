@@ -1,4 +1,4 @@
-package collections;
+package encapsulation;
 import java.util.*;
 
 public class Hash1 {
