@@ -27,28 +27,41 @@ public class DuplicateValue {
         names.add("Pavan");
         names.add("Pavan");
 
-        ArrayList<String> duplicateNames = new ArrayList();
-        ArrayList<Integer> index = new ArrayList();
-        
+        ArrayList<String> duplicateNames = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> duplicateIndices = new ArrayList<>();
 
         for (int i = 0; i < names.size(); i++) {
-            int count = 0;
-            
-            for (int j = i+1; j < names.size(); j++) {
-                if (names.get(i)==names.get(j)) {
-                    count++;
-                    index.add(j);
-                    break;
+            String name = names.get(i);
+            boolean isDuplicate = false;
+
+            for (int j = i + 1; j < names.size(); j++) {
+                if (name.equals(names.get(j))) {
+                    isDuplicate = true;
+
+                    if (!duplicateNames.contains(name)) {
+                        duplicateNames.add(name);
+                        ArrayList<Integer> indices = new ArrayList<>();
+                        indices.add(i);
+                        indices.add(j);
+                        duplicateIndices.add(indices);
+                    } else {
+                        int index = duplicateNames.indexOf(name);
+                        duplicateIndices.get(index).add(j);
+                    }
                 }
             }
-            
-            if (count==1) {
-                duplicateNames.add(names.get(i));
+
+            if (isDuplicate && !duplicateNames.contains(name)) {
+                duplicateNames.add(name);
+                ArrayList<Integer> indices = new ArrayList<>();
+                indices.add(i);
+                duplicateIndices.add(indices);
             }
         }
 
-        for (int i =0; i<duplicateNames.size(); i++) {
-        	System.out.println("Name:" +duplicateNames.get(i)+"\nIndex Value : "+index.get(i));
+        // Print duplicates and their indices
+        for (int i = 0; i < duplicateNames.size(); i++) {
+            System.out.println("Name: " + duplicateNames.get(i) + "\nIndex Values: " + duplicateIndices.get(i));
         }
     }
 }
