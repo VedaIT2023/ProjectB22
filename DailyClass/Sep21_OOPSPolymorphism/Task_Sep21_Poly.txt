@@ -1,0 +1,8 @@
+Using HashMap create Chat & corporate abbrevations and its full form.
+
+
+Create a Addition, Subtraction, Multiplication
+for 2 numbers
+for 3 numbers 
+for 4 numbers 
+for 5 numbers 
