@@ -30,11 +30,20 @@ public class Application1 {
 
 		        Doctor doctors[] = { mahi, maruthi, maheswari, akshaya, akshitha, abhinaya, abhi, vasu, bheem, pavan };
 		        Patient patients[] = { ravi, ramya, tanu, hemanth, madhu, marin, balu, hema, siri, raju };
-		        
+
 		        Scanner scanner = new Scanner(System.in);
 		        boolean continueBooking = true;
 
 		        while (continueBooking) {
+		        	System.out.println("Doctors List:");
+		        	for(int i=0;i<doctors.length;i++) {
+		        		System.out.println( i+"."+"Doctor Name:" +doctors[i].name +" ");
+		        		   								System.out.println("DoctorSpecialisation:"+doctors[i].specialisation);
+		        		System.out.println("Doctor Timings:"+doctors[i].timings);
+		        		System.out.println(" ");
+		        	}
+			       
+
 		            System.out.println("Enter a number to select a doctor:");
 		        
 		        int selectedDoctorIndex = scanner.nextInt();
@@ -43,7 +52,7 @@ public class Application1 {
 		        if (selectedDoctorIndex >= 0 && selectedDoctorIndex < doctors.length) {
 		            Doctor selectedDoctor = doctors[selectedDoctorIndex];
 
-		           
+		          
 		            System.out.println("Appointment Of Doctor");
 		            System.out.println("Doctor: " + selectedDoctor.name);
 		            System.out.println("Specialisation: " + selectedDoctor.specialisation);
@@ -53,7 +62,6 @@ public class Application1 {
 		            System.out.print("Do you want to book an appointment? (yes/no): ");
 		            String bookAppointment = scanner.next();
 		            System.out.println("Enter Patient Name:");
-
 		            if (bookAppointment.equalsIgnoreCase("yes")) {
 		                
 		               

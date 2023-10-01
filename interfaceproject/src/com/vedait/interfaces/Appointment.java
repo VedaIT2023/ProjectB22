@@ -53,7 +53,7 @@ public class Appointment {
 	                } else {
 	                    System.out.println("Please select another doctor.");
 	                }
-	            }
+	      }
 
 	          
 	            System.out.print("Do you want to book another appointment? (yes/no): ");
