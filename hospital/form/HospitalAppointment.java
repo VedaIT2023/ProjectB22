@@ -7,7 +7,7 @@ public class HospitalAppointment {
     public static void main(String[] args) {
 
         AllDetails doctor = new AllDetails();
-        ArrayList<CommonProperties> array = new ArrayList<>();
+        
 
         List<DoctorsDetails> doctorList = new ArrayList<>(doctor.doctors.values());
 
