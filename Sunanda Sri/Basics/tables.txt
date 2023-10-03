@@ -1,0 +1,11 @@
+import java.util.scanner;
+public class scanner{
+    public static void main(string[]args){
+        Scanner readInput = New Scanner(System.in);
+        system.out.println("Enter Number = ''");
+        system.out.println("Enter Number = ''");
+        int Number1;
+        int Number2;
+        if(i=0;i<10;i++){
+            raedInput = nextline
+            system.out.println(
