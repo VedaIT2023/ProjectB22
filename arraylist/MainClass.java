@@ -123,7 +123,7 @@ public class MainClass {
             System.out.println("2. View Doctors Information");
             System.out.println("3. View Appointments Information");
             System.out.println("4. Delete an Appointment");
-            System.out.println("5. Exit");
+            System.out.println("5. Quit");
             options = sc.nextInt();
             switch (options) {
                 case 1:
@@ -141,7 +141,7 @@ public class MainClass {
                     deleteAppointment();
                     break;
                 case 5:
-                    System.out.println("Exiting...");
+                    System.out.println("Quit");
                     break;
                 default:
                     System.out.println("Invalid Option. Please enter a valid option.");
