@@ -1,14 +1,20 @@
 package com.vedhait.Application.Form;
 import java.util.Scanner;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.Date;
+import java.time.*;
 import java.util.ArrayList;
 public class AppointmentForm {
 	
 	//Appointment ID:<Doctor ID, Patient Name, Problem, phone >
 	static HashMap<Integer,ArrayList<String>> appointments=new HashMap<>();
 	static Integer appointmentCounter=1000;
-
+	
+	
     public static void main(String[] args) {
+    	
         Doctors.doctorDetails();
         showOptions();
     }
@@ -18,6 +24,25 @@ public class AppointmentForm {
     	appointmentCounter++;
     	return appointmentCounter;
     }
+    
+    static LocalDateTime generateRandomDateTime(){
+    	Random random = new Random();
+    	//generates Days
+    	int randomDayOfWeek = random.nextInt(5)+1;
+    	//generates Hours
+    	int randomHours = random.nextInt(10)+8;
+    	int randomMinutes = random.nextInt(60);
+    	
+    	LocalDateTime now = LocalDateTime.now();   
+    	
+    	LocalDateTime randomDateTime = now.plusDays(randomDayOfWeek).withHour(randomHours).withMinute(randomMinutes);
+    	LocalDateTime randomDateTime1 = now.withHour(randomHours);
+    	LocalDateTime randomDateTime2 = now.withMinute(randomMinutes);
+  
+    	return randomDateTime;
+    	
+    	
+    	}
     
     static void bookAppointment(String doctorId) {
     	Scanner sc = new Scanner(System.in);
@@ -33,6 +58,8 @@ public class AppointmentForm {
         }
         if (!found) {
             System.out.println("Doctor Not Found");
+            System.out.println("Please Select Another Option");
+            System.out.println("");
             return;
         }
         
@@ -46,28 +73,44 @@ public class AppointmentForm {
         	String problem=sc.next();
         	System.out.println("Enter your phone no.");
         	String phone=sc.next();
-        	
-        	//Appointment details
-        	ArrayList<String> appointmentdetails=new ArrayList<>();
-        	appointmentdetails.add(doctorId);
-        	appointmentdetails.add(name);
-        	appointmentdetails.add(problem);
-        	appointmentdetails.add(phone);
-        	
-        	Integer appointmentID=getAppointmentId();
-        	
-        	appointments.put(appointmentID,appointmentdetails);
-        	
-            System.out.println("Your appointment is booked with Appointment ID: "+appointmentID);
-            
+        	while(true) {
+        	if(phone.length() != 10) {
+        		System.out.println("Please Enter valid Phone Number");
+        		System.out.println("");
+        		break;
+        	}else {
+        		LocalDateTime appointmentDateTime = generateRandomDateTime();
+        		
+        		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy/HH:mm");
+        		String formattedDateTime = appointmentDateTime.format(formatter);
+        		
+        		//Appointment details
+            	ArrayList<String> appointmentdetails=new ArrayList<>();
+            	appointmentdetails.add(doctorId);
+            	appointmentdetails.add(name);
+            	appointmentdetails.add(problem);
+            	appointmentdetails.add(phone);
+            	appointmentdetails.add(appointmentDateTime.toString());
+            	
+            	Integer appointmentID=getAppointmentId();
+            	
+            	appointments.put(appointmentID,appointmentdetails);
+        		
+        		System.out.println("Your appointment is booked with Appointment ID: "+appointmentID);
+                System.out.println("Appointment Date and Time :"+formattedDateTime);
+                System.out.println("");
+                break;
+        	}
+       	}
         } else if (input.equalsIgnoreCase("no")) {
-    
+            
             System.out.println("Please select another doctor.");
+            System.out.println("");
         } else {
             System.out.println("Invalid input. Please enter 'yes' or 'no'.");
+            System.out.println("");
         }
     }
-    
     static void viewDoctorsInfo() {
     	Scanner sc = new Scanner(System.in);
     	System.out.println("Display Doctor Information");
@@ -88,6 +131,7 @@ public class AppointmentForm {
     		System.out.println("Patient Name:"+appointmentDetails.get(1));
     		System.out.println("Patient Problem:"+appointmentDetails.get(2));
     		System.out.println("Phone:"+appointmentDetails.get(3));
+    		System.out.println("Appointment Date And Time :" +appointmentDetails.get(4));
     		System.out.println();
     	}
     }
@@ -101,7 +145,7 @@ public class AppointmentForm {
     	
     	if(appointments.containsKey(appointmentId)){
     		appointments.remove(appointmentId);
-    		System.out.println("Your Appointment was cancelled successfully.");
+    		System.out.println("Your Appointment was cancelled.");
     	}
     	else {
     		System.out.println("appointment details not found.");
@@ -125,6 +169,7 @@ public class AppointmentForm {
             System.out.println("3. View Appointments Information");
             System.out.println("4. Delete an Appointment");
             System.out.println("5. Exit");
+            
             options = sc.nextInt();
             switch (options) {
                 case 1:
@@ -152,6 +197,7 @@ public class AppointmentForm {
     }
         catch (Exception e) {
             System.out.println("Please Enter a valid Option");
+            
         }
     }
 }
