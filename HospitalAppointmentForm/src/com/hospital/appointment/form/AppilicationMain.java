@@ -25,7 +25,7 @@ public class AppilicationMain {
         int id = 1000;
         int patientnum = 0;
         int patientLimit = 100;
-        
+        String drName="";
         
         while(patientnum<=patientLimit) {
         	
@@ -47,6 +47,8 @@ public class AppilicationMain {
         			
         				System.out.println("Enter the Id of the Doctor: ");
         				int drId = scanner.nextInt();
+            			drName=property.doctors.get(drId).drname;
+
         				System.out.println(property.doctors.get(drId).drDetils());
         				input = false;
         				System.out.println("\nEnter your Details");
@@ -79,7 +81,7 @@ public class AppilicationMain {
         		}
     			patientList.add(new PatientProperties(id, pname, page, pgender, pproblem, time));
 
-        		System.out.println("Your Appointment is booked with ");
+        		System.out.println("Your Appointment is booked with "+drName);
         		System.out.println("Do you want to book another appointment type yes or no");
                  String re = scanner.next();
                  while (!re.equals("yes") && !re.equals("no")) {
@@ -169,12 +171,11 @@ public class AppilicationMain {
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DATE, random.nextInt(30) + 1); 
 
-        // Check if the generated date is a weekend (Saturday or Sunday)
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
         if (dayOfWeek == Calendar.SATURDAY) {
-            calendar.add(Calendar.DATE, 2); // Move to Monday
+            calendar.add(Calendar.DATE, 2); 
         } else if (dayOfWeek == Calendar.SUNDAY) {
-            calendar.add(Calendar.DATE, 1); // Move to Monday
+            calendar.add(Calendar.DATE, 1); 
         }
 
         int hour = random.nextInt(8) + 9; 
