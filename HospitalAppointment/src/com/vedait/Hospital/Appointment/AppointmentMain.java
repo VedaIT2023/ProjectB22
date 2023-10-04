@@ -19,9 +19,9 @@ public class AppointmentMain {
         	
             System.out.println("Select an Option");
             System.out.println("1. View Doctor Details ");
-            System.out.println("2. Schedule Appointment");
-            System.out.println("3. List of Appointments");
-            System.out.println("4. Terminate Appointment");
+            System.out.println("2. Book Appointment");
+            System.out.println("3. View Appointments");
+            System.out.println("4. Cancel Appointment");
             System.out.println("5. Update Appointment");
             System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
