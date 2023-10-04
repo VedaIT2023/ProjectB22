@@ -43,7 +43,7 @@ public class Hospital {
 	    	System.out.println(doctors[i].getName()+"\n");
 	    	}
 	    }
-    	System.out.println("Are you Ok with the Timings say (yes or no)");
+    	System.out.println("Are you Ok with the Timings say (yes/No)");
     	String feedback=sc.next();
 	    	 if (feedback.equalsIgnoreCase("yes")) {
                  System.out.println("Your Appointment is fixed");
