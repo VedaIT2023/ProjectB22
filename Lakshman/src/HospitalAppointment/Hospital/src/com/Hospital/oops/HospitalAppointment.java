@@ -100,7 +100,7 @@ public class HospitalAppointment {
             	    String confirmation = sc.next().toLowerCase();
             	    if(confirmation.equals("no")) {
             	    	System.out.println("Thank you");
-            	    	count=false;
+            	    	count=true;
                        break;
             	    }
             	    else if(confirmation.equals("yes")) {
@@ -145,7 +145,7 @@ public class HospitalAppointment {
                     System.out.println("Please select a valid option.");
 	   
           
-           }
+             }
 
             
           }
