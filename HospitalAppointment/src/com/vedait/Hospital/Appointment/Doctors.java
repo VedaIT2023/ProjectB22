@@ -27,8 +27,12 @@ public class Doctors {
 	public String toString(){
 		return  "Doctor ID:" + doctorid+"\n" 
 				+ "Doctor Name  :" + doctorname + "\n" +
+<<<<<<< Updated upstream
                 "Specialization :" + specialization + "\n"  
                 ;
+=======
+                "Specialization :" + specialization + "\n";
+>>>>>>> Stashed changes
 		
 	}
 }

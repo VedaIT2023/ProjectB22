@@ -89,11 +89,19 @@ public class AppointmentMain {
 	
 	static void viewAppointments() {
 		if (appointments.isEmpty()) {
+<<<<<<< Updated upstream
 	        System.out.println("No appointments.");
 	    } else {
      System.out.println("Appointments:");
      for (int i=0;i<appointments.size();i++) {
          System.out.println(appointments.toString());
+=======
+	        System.out.println("No appointments booked.");
+	    } else {
+     System.out.println("Appointments:");
+     for (int i=0;i<appointments.size();i++) {
+         System.out.println(appointments.get(i).toString());
+>>>>>>> Stashed changes
      	}
     } 
 }

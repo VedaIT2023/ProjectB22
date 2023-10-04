@@ -59,7 +59,11 @@ public class Details {
 	        		"Doctor ID : " + doctorid + "\n" +
 	                "Patient Name :" + patientName + "\n" +
 	                "Problem :" + problem + "\n" +        
+<<<<<<< Updated upstream
 	                "Appointment Date/Time: " + formattedDate;
+=======
+	                "Appointment Date/Time: " + formattedDate ;
+>>>>>>> Stashed changes
 	    }
 	}
 
