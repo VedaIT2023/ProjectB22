@@ -1,38 +1,32 @@
 package com.vedait.Hospital.Appointment;
 
-public class Doctors {
 
+public class Doctors  {
 	int doctorid;
 	String doctorname;
 	String specialization;
+	String time;
 	
-	Doctors(String doctorname,String specialization,int doctorid ){
+	Doctors(String doctorname,String specialization,int doctorid,String time){
 		
 		this.doctorid = doctorid;
 		this.doctorname = doctorname;
 		this.specialization = specialization;
-		
+		this.time = time;
 	}
-	
-
-	public String getDoctorName() {
-        return doctorname;
-    }
-
-    public String getSpecialization() {
-        return specialization;
-    }
-   
     
 	public String toString(){
 		return  "Doctor ID:" + doctorid+"\n" 
 				+ "Doctor Name  :" + doctorname + "\n" +
-<<<<<<< Updated upstream
-                "Specialization :" + specialization + "\n"  
-                ;
-=======
-                "Specialization :" + specialization + "\n";
->>>>>>> Stashed changes
+                "Specialization :" + specialization + "\n" +
+				"Timings :" + time + "\n" ;
 		
 	}
+		
+		       
+	
+	public int getId() {
+		return doctorid;
+	}
+	
 }

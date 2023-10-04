@@ -1,129 +1,212 @@
 package com.vedait.Hospital.Appointment;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class AppointmentMain {
-	
-	static ArrayList<Details> appointments = new ArrayList<>();
+
+    static ArrayList<Details> appointments = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
-	static ArrayList<Doctors> doctors = new ArrayList();
-    static int intialappointmentno = 1000; 
+    static int initialAppointmentNo = 1000;
+    static int appointmentNo = initialAppointmentNo;
+	static DoctorDetails doc =new DoctorDetails();
+	static ArrayList<Doctors> doctorsList = doc.getDoctorsList();
     
-	public static void main(String[] args) {
-		
-		doctors.add(new Doctors("Dr.Pavan","Cardiologist",101));
-		doctors.add(new Doctors("Dr.Laxman","Dermatologists",102));
-		doctors.add(new Doctors("Dr.Satish","Endocrinologists",103));
-		doctors.add(new Doctors("Dr.Balaji","Gastroenterologists",104));
-		doctors.add(new Doctors("Dr.Satwik","Hematologists",105));
-		doctors.add(new Doctors("Dr.Lakshmi","Nephrologists",106));
-		doctors.add(new Doctors("Dr.Supriya","Neurologists",107));
-		doctors.add(new Doctors("Dr.Lalitha","Ophthalmologists",108));
-		doctors.add(new Doctors("Dr.Niharika","Immunologists",109));
-		
-     
-     while (true) {
-    	 
-    	 System.out.println("Appointment Options");
-         System.out.println("1. View Doctor Details ");
-         System.out.println("2. Book an appointment");
-         System.out.println("3. View appointments");
-         System.out.println("4. Cancel Appointment");
-         System.out.println("5. Exit");
-         System.out.print("Enter your choice: ");
-         int choice = scanner.nextInt();
-         scanner.nextLine(); 
+    public static void main(String[] args) {
+    	
 
-         switch (choice) {
-             case 1:
-            	 System.out.println("Details Of Doctors :");
-            	 for(int i=0;i<doctors.size();i++) {
-         			System.out.println(doctors.get(i).toString());
-         		}
-                 break;
-             case 2: 
-                 bookAppointment();
-                 break;
-             case 3:
-            	 viewAppointments();
-                 break;
-             case 4:
-            	 cancelAppointment();
-                 break;   
-             case 5:
-                 System.out.println("Thank You!");
-                 System.exit(0);
-                 break;
-             default:
-                 System.out.println("Invalid choice. Please try again.");
-                 break;
-         }
-     }
- }
+    	
+        while (true) {
+        	
+            System.out.println("Select an Option");
+            System.out.println("1. View Doctor Details ");
+            System.out.println("2. Schedule Appointment");
+            System.out.println("3. List of Appointments");
+            System.out.println("4. Terminate Appointment");
+            System.out.println("5. Update Appointment");
+            System.out.println("6. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
-	static void bookAppointment() {
-	    System.out.println("Enter Doctor ID :");
-	    int doctorId = scanner.nextInt();
-
-	    boolean doctorExists = false;
-
-	    for (int i = 0; i < doctors.size(); i++) {
-	        if (doctors.get(i).doctorid==(doctorId)) {
-	            doctorExists = true;
-
-	            System.out.print("Enter patient name: ");
-	            String patientName = scanner.next();
-
-	            System.out.print("Enter Patient Problem : ");
-	            String problem = scanner.next();
-
-	            Details appointment = new Details(intialappointmentno++, doctorId, problem, patientName);
-	            appointments.add(appointment);
-	            System.out.println("Appointment booked successfully!");
-	            break; 
-	        }
-	    }
-
-	    if (!doctorExists) {
-	        System.out.println("Invalid Doctor ID. Please enter a valid Doctor ID.");
-	    }
-	}
-	
-	static void viewAppointments() {
-		if (appointments.isEmpty()) {
-<<<<<<< Updated upstream
-	        System.out.println("No appointments.");
-	    } else {
-     System.out.println("Appointments:");
-     for (int i=0;i<appointments.size();i++) {
-         System.out.println(appointments.toString());
-=======
-	        System.out.println("No appointments booked.");
-	    } else {
-     System.out.println("Appointments:");
-     for (int i=0;i<appointments.size();i++) {
-         System.out.println(appointments.get(i).toString());
->>>>>>> Stashed changes
-     	}
-    } 
-}
-	
-	
-    static void cancelAppointment() {
-         System.out.print("Enter the  appointment number you want to cancel: ");
-         int appointmentnumber = scanner.nextInt();
-         boolean found = false;
-         for (int i=0; i<appointments.size(); i++) {
-             if (appointments.get(i).appointmentno==appointmentnumber) {
-                 appointments.remove(i);
-                 System.out.println("Appointment cancled");
-                found = true;
-                 break;
-             }
-         }
-         if(!found) {
-             System.out.println("Invalid appointment number.");
-         }
+            switch (choice) {
+                case 1:
+                    System.out.println("Details Of Doctors :");
+                    ArrayList<Doctors> doctors = new ArrayList<>();
+                    for (Doctors doctor : doctorsList) {
+                    	System.out.println(doctor.toString());
+                        
+                    }
+                    break;
+                case 2:
+                    bookAppointment();
+                    break;
+                case 3:
+                    viewAppointments();
+                    break;
+                case 4:
+                    cancelAppointment();
+                    break;
+                case 5:
+                    updateAppointment();
+                    break;
+                case 6:
+                    System.out.println("Thank You!");
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
+        }
     }
- }
- 
- 
 
+    static void bookAppointment() {
+        System.out.println("Enter Doctor ID:");
+        int doctorId = 0;
+
+        try {
+            doctorId = scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("Invalid input for Doctor ID. Please enter a valid integer.");
+            scanner.nextLine();
+            return;
+        }
+
+        boolean doctorExists = false;
+        Doctors selectedDoctor = null;
+
+        for (Doctors doctor : doctorsList) { // Use the doctorsList you retrieved earlier
+            if (doctor.getId() == doctorId) {
+                doctorExists = true;
+                selectedDoctor = doctor;
+                break;
+            }
+        }
+
+        if (doctorExists) {
+            System.out.println("Doctor Details:");
+            System.out.println("Doctor Name: " + selectedDoctor.doctorname);
+            System.out.println("Specialization: " + selectedDoctor.specialization);
+            System.out.println("Doctor ID: " + selectedDoctor.doctorid);
+            System.out.println("Timings :" + selectedDoctor.time);
+
+            System.out.print("Enter patient name: ");
+            String patientName = scanner.next();
+            int age = 0;
+            char gender = '0';
+
+            try {
+                System.out.print("Enter Your Age: ");
+                age = scanner.nextInt();
+
+                System.out.print("Enter Gender (M/F): ");
+                gender = scanner.next().charAt(0);
+            } catch (Exception e) {
+                System.out.println("Invalid input for age or gender. Please enter valid values.");
+                scanner.nextLine();
+                return;
+            }
+
+            System.out.print("Enter Patient Problem: ");
+            String problem = scanner.next();
+
+            Details appointment = new Details(appointmentNo, doctorId, problem, age, gender, patientName);
+            appointments.add(appointment);
+
+            System.out.println("Your Appointment is booked successfully with Appointment No: " + appointmentNo++);
+        } else {
+            System.out.println("Invalid Doctor ID. Please enter a valid Doctor ID.");
+        }
+    }
+
+    static void viewAppointments() {
+        if (appointments.isEmpty()) {
+            System.out.println("No appointments booked.");
+        } else {
+            System.out.println("Appointments:");
+            for (Details appointment : appointments) {
+                System.out.println(appointment.toString());
+            }
+        }
+    }
+
+    static void cancelAppointment() {
+        System.out.print("Enter the appointment number you want to cancel: ");
+        int appointmentNumber = scanner.nextInt();
+        boolean found = false;
+
+        for (int i = 0; i < appointments.size(); i++) {
+            if (appointments.get(i).appointmentno == appointmentNumber) {
+                appointments.remove(i);
+                System.out.println("Appointment canceled");
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Invalid appointment number.");
+        }
+    }
+
+    static void updateAppointment() {
+        if (appointments.isEmpty()) {
+            System.out.println("No appointments have been booked yet.");
+            return;
+        }
+
+        System.out.print("Enter the appointment number you want to update: ");
+        int appointmentNumber = scanner.nextInt();
+        boolean found = false;
+
+        for (Details appointment : appointments) {
+            if (appointment.getAppointno() == appointmentNumber) {
+                found = true;
+                System.out.println("Current Appointment Details:");
+                System.out.println(appointment.toString());
+
+                System.out.println("Select what you want to update:");
+                System.out.println("1. Patient Name");
+                System.out.println("2. Age");
+                System.out.println("3. Gender");
+                System.out.println("4. Patient Problem");
+                System.out.print("Enter your choice: ");
+                int updateChoice = scanner.nextInt();
+                scanner.nextLine();
+
+                switch (updateChoice) {
+                    case 1:
+                        System.out.print("Enter new Patient Name: ");
+                        String newPatientName = scanner.nextLine();
+                        appointment.setPatientName(newPatientName);
+                        System.out.println("Patient Name updated successfully.");
+                        break;
+                    case 2:
+                        System.out.print("Enter new Age: ");
+                        int newAge = scanner.nextInt();
+                        appointment.setAge(newAge);
+                        System.out.println("Age updated successfully.");
+                        break;
+                    case 3:
+                        System.out.print("Enter new Gender (M/F): ");
+                        char newGender = scanner.next().charAt(0);
+                        appointment.setGender(newGender);
+                        System.out.println("Gender updated successfully.");
+                        break;
+                    case 4:
+                        System.out.print("Enter new Patient Problem: ");
+                        String newProblem = scanner.next();
+                        appointment.setProblem(newProblem);
+                        System.out.println("Patient Problem updated successfully.");
+                        break;
+                    default:
+                        System.out.println("Invalid choice for update.");
+                }
+            }
+        }
+
+        if (!found) {
+            System.out.println("Appointment not found.");
+        }
+    }
+}
