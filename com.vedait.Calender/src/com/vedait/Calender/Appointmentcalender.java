@@ -1,13 +1,14 @@
-package com.vedait.Callender;
-import java.util.Scanner;
-import java.util.*;
-import java.util.ArrayList;
+package com.vedait.Calender;
+
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Random;
+import java.util.Scanner;
 
-public class Appointmentcallender {
-
-	    static HashMap<Integer, ArrayList<String>> appointments = new HashMap<>();
+public class Appointmentcalender {
+	 static HashMap<Integer, ArrayList<String>> appointments = new HashMap<>();
 	    static Integer appointmentCounter = 1000;
 
 	    public static void main(String[] args) {
@@ -49,64 +50,27 @@ public class Appointmentcallender {
 	            System.out.println("Enter your phone no.");
 	            String phone = sc.next();
 
-	          
 	            System.out.println("Available Appointment Slots:");
 	            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-	         
-	            Date slot1 = new Date();
-	            Date slot2 = new Date();
-	            Date slot3 = new Date();
-	            Date slot4 = new Date();
-	            Date slot5 = new Date();
-	            Date slot6 = new Date();
-	            Date slot7 = new Date();
-	            Date slot8 = new Date();
-
-	            System.out.println("1. " + dateFormat.format(slot1));
-	            System.out.println("2. " + dateFormat.format(slot2));
-	            System.out.println("3. " + dateFormat.format(slot3));
-	            System.out.println("4. " + dateFormat.format(slot4));
-	            System.out.println("5. " + dateFormat.format(slot5));
-	            System.out.println("6. " + dateFormat.format(slot6));
-	            System.out.println("7. " + dateFormat.format(slot7));
-	            System.out.println("8. " + dateFormat.format(slot8));
-	            System.out.println("Select an appointment slot (1, 2,3,4,5,6,7,8):");
-	            int slotChoice = sc.nextInt();
-
-	            Date selectedSlot = null;
-
-	            switch (slotChoice) {
-	                case 1:
-	                    selectedSlot = slot1;
-	                    break;
-	                case 2:
-	                    selectedSlot = slot2;
-	                    break;
-	                case 3:
-	                    selectedSlot = slot3;
-	                    break;
-	                case 4:
-	                    selectedSlot = slot4;
-	                    break;
-	                case 5:
-	                    selectedSlot = slot5;
-	                    break;
-	                case 6:
-	                    selectedSlot = slot6;
-	                    break;
-	                case 7:
-	                    selectedSlot = slot7;
-	                    break;
-	                case 8:
-	                    selectedSlot = slot8;
-	                    break;
-	                default:
-	                    System.out.println("Invalid choice.");
-	                    return;
+	            Random random = new Random();
+	            ArrayList<Date> availableSlots = new ArrayList<>();
+	            for (int i = 0; i < 8; i++) {
+	                Date slot = new Date(System.currentTimeMillis() + random.nextInt(7 * 24 * 60 * 60 * 1000)); // Generate a random time slot within the next 7 days
+	                availableSlots.add(slot);
+	                System.out.println((i + 1) + ". " + dateFormat.format(slot));
 	            }
 
-	           
+	            System.out.println("Select an appointment slot (1, 2, 3, 4, 5, 6, 7, 8):");
+	            int slotChoice = sc.nextInt();
+
+	            if (slotChoice < 1 || slotChoice > 8) {
+	                System.out.println("Invalid choice.");
+	                return;
+	            }
+
+	            Date selectedSlot = availableSlots.get(slotChoice - 1);
+
 	            ArrayList<String> appointmentDetails = new ArrayList<>();
 	            appointmentDetails.add(doctorId);
 	            appointmentDetails.add(name);
@@ -132,7 +96,6 @@ public class Appointmentcallender {
 	        int options;
 
 	        do {
-	          
 	            System.out.println("Select any Option");
 	            System.out.println("1. Book an Appointment");
 	            System.out.println("2. View Doctors Information");
@@ -157,4 +120,5 @@ public class Appointmentcallender {
 	        } while (options != 2);
 	    }
 	}
+
 
