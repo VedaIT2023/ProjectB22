@@ -1,11 +1,10 @@
 package com.vedait.Appilactionform;
 import java.util.Scanner;
 import java.util.*;
-import java.util.ArrayList;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Application {
+public class AppointmentCalendar {
     static HashMap<Integer, ArrayList<String>> appointments = new HashMap<>();
     static Integer appointmentCounter = 1000;
 
@@ -48,11 +47,9 @@ public class Application {
             System.out.println("Enter your phone no.");
             String phone = sc.next();
 
-          
             System.out.println("Available Appointment Slots:");
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-         
             Date slot1 = new Date();
             Date slot2 = new Date();
             Date slot3 = new Date();
@@ -70,7 +67,7 @@ public class Application {
             System.out.println("6. " + dateFormat.format(slot6));
             System.out.println("7. " + dateFormat.format(slot7));
             System.out.println("8. " + dateFormat.format(slot8));
-            System.out.println("Select an appointment slot (1, 2,3,4,5,6,7,8):");
+            System.out.println("Select an appointment slot (1, 2, 3, 4, 5, 6, 7, 8):");
             int slotChoice = sc.nextInt();
 
             Date selectedSlot = null;
@@ -105,7 +102,6 @@ public class Application {
                     return;
             }
 
-           
             ArrayList<String> appointmentDetails = new ArrayList<>();
             appointmentDetails.add(doctorId);
             appointmentDetails.add(name);
@@ -126,12 +122,43 @@ public class Application {
         }
     }
 
+    static void viewDoctorsInformation() {
+        ArrayList<Doctors> doctorsList = Doctors.doctorsList;
+        System.out.println("Doctor Information:");
+        for (Doctors doctor : doctorsList) {
+            doctor.displayDoctorInfo();
+        }
+    }
+
+    static void viewAppointmentsInformation() {
+        System.out.println("Appointments Information:");
+        for (Map.Entry<Integer, ArrayList<String>> entry : appointments.entrySet()) {
+            Integer appointmentID = entry.getKey();
+            ArrayList<String> appointmentDetails = entry.getValue();
+            System.out.println("Appointment ID: " + appointmentID);
+            System.out.println("Doctor ID: " + appointmentDetails.get(0));
+            System.out.println("Name: " + appointmentDetails.get(1));
+            System.out.println("Problem: " + appointmentDetails.get(2));
+            System.out.println("Phone: " + appointmentDetails.get(3));
+            System.out.println("Appointment Time: " + appointmentDetails.get(4));
+            System.out.println();
+        }
+    }
+
+    static void deleteAppointment(Integer appointmentID) {
+        if (appointments.containsKey(appointmentID)) {
+            appointments.remove(appointmentID);
+            System.out.println("Appointment ID " + appointmentID + " has been deleted.");
+        } else {
+            System.out.println("Appointment ID " + appointmentID + " not found.");
+        }
+    }
+
     public static void showOptions() {
         Scanner sc = new Scanner(System.in);
         int options;
 
         do {
-          
             System.out.println("Select any Option");
             System.out.println("1. Book an Appointment");
             System.out.println("2. View Doctors Information");
@@ -147,13 +174,24 @@ public class Application {
                     bookAppointment(doctorId);
                     break;
                 case 2:
-                    System.out.println("Exiting...");
+                    viewDoctorsInformation();
+                    break;
+                case 3:
+                    viewAppointmentsInformation();
+                    break;
+                case 4:
+                    System.out.println("Enter the Appointment ID to delete:");
+                    int appointmentID = sc.nextInt();
+                    deleteAppointment(appointmentID);
+                    break;
+                case 5:
+                    System.out.println("Exit");
                     break;
                 default:
                     System.out.println("Invalid Option. Please enter a valid option.");
                     break;
             }
-        } while (options != 2);
+        } while (options != 5);
     }
 }
 
