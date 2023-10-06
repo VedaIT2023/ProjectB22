@@ -1,6 +1,0 @@
-Capture at least 10  doctors details from online and save in the file
-
-https://docs.google.com/spreadsheets/d/1hOuC_CUvZOipJfdpHUPlmPNM62z3GKlVwyhINhP8IQo/edit#gid=1381824365
-
-
-Create a json format with the captured details and save and upload to git
