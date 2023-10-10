@@ -1,0 +1,15 @@
+DoctorId,DoctorName,Specialisation,Email,Experience,Working,Degree,Fee,Gender
+1001,Dr.Saibaba,Opthamologist,saibaba@gmail.com,50,"Sri Sai Jyothi Eye Hospital","MBBS MS",200,M
+1002,"Dr.Prakash Kumar",Opthamologist,prakash@gmail.com,50,"Apollo Hospital","MBBS MS",500,M
+1003,"Dr.Mallika Goyal",Opthamologist,mallika@gmail.com,26,"Apollo Hospital","MBBS MS",700,F
+1004,"Dr.Naveen Yalamanchili",Opthamologist,naveen@gmail.com,22,"Continental Hospitals","MBBS MS",800,M
+1005,"Dr.Harikrishnan V",Opthamologist,harikrishanan@gmail.com,16,"Eyeris EyeCare Hospital","MBBS MS",400,M
+1006,"Dr.NVR Murthy",Opthamologist,murthy@gmail.com,24,"Murthy Eye Hospital, St.Theresa","MBBS MS",1200,M
+1007,"Dr.K Padma",Opthamologist,padma@gmail.com,19,"Citizen Hospital","MBBS MS",900,F
+1008,Dr.Sirisha,Opthamologist,sirisha@gmail.com,16,"Isha Netralaya Eye Care","MBBS MS",600,F
+1009,"Dr.Advaith Sai",Opthamologist,advaith@gmail.com,13,"Sai Jyothi Eye Hospital","MBBS MS",300,M
+1010,"Dr.Sree kumar",Opthamologist,sree@gmail.com,40,"Padmavathi Nethralaya Hospital","MBBS MS",1100,M
+1011,"Dr.Shika Fogla",Opthamologist,shikafogla@gmail.com,31,"Apollo Hospital","MBBS MS",800,F
+1012,"Dr.Sirish Kumar",Opthamologist,sirish@gmail.com,20,"Apollo DRDO Hospital","MBBS MS",800,M
+1013,"Dr.Arjun S",Opthamologist,arjun@gmail.com,16,"Sree Menakshi Eye Hospital","MBBS MS",500,M
+1014,"Dr.Harinath Babu",Opthamologist,harinath@gmail.com,18,"Agarwals Eye Hospital","MBBS MS",400,M
