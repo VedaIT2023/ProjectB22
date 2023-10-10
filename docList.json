@@ -1,0 +1,156 @@
+[
+	{
+		"DoctorId" : 1001,
+		"DoctorName" : "Dr.Saibaba",
+		"Specialisation" : "Opthamologist",
+		"Email" : "saibaba@gmail.com",
+		"Experience" : 50,
+		"Working" : "Sri Sai Jyothi Eye Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 200,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1002,
+		"DoctorName" : "Dr.Prakash Kumar",
+		"Specialisation" : "Opthamologist",
+		"Email" : "prakash@gmail.com",
+		"Experience" : 50,
+		"Working" : "Apollo Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 500,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1003,
+		"DoctorName" : "Dr.Mallika Goyal",
+		"Specialisation" : "Opthamologist",
+		"Email" : "mallika@gmail.com",
+		"Experience" : 26,
+		"Working" : "Apollo Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 700,
+		"Gender" : "F"
+	},
+	{
+		"DoctorId" : 1004,
+		"DoctorName" : "Dr.Naveen Yalamanchili",
+		"Specialisation" : "Opthamologist",
+		"Email" : "naveen@gmail.com",
+		"Experience" : 22,
+		"Working" : "Continental Hospitals",
+		"Degree" : "MBBS MS",
+		"Fee" : 800,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1005,
+		"DoctorName" : "Dr.Harikrishnan V",
+		"Specialisation" : "Opthamologist",
+		"Email" : "harikrishanan@gmail.com",
+		"Experience" : 16,
+		"Working" : "Eyeris EyeCare Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 400,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1006,
+		"DoctorName" : "Dr.NVR Murthy",
+		"Specialisation" : "Opthamologist",
+		"Email" : "murthy@gmail.com",
+		"Experience" : 24,
+		"Working" : "Murthy Eye Hospital, St.Theresa",
+		"Degree" : "MBBS MS",
+		"Fee" : 1200,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1007,
+		"DoctorName" : "Dr.K Padma",
+		"Specialisation" : "Opthamologist",
+		"Email" : "padma@gmail.com",
+		"Experience" : 19,
+		"Working" : "Citizen Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 900,
+		"Gender" : "F"
+	},
+	{
+		"DoctorId" : 1008,
+		"DoctorName" : "Dr.Sirisha",
+		"Specialisation" : "Opthamologist",
+		"Email" : "sirisha@gmail.com",
+		"Experience" : 16,
+		"Working" : "Isha Netralaya Eye Care",
+		"Degree" : "MBBS MS",
+		"Fee" : 600,
+		"Gender" : "F"
+	},
+	{
+		"DoctorId" : 1009,
+		"DoctorName" : "Dr.Advaith Sai",
+		"Specialisation" : "Opthamologist",
+		"Email" : "advaith@gmail.com",
+		"Experience" : 13,
+		"Working" : "Sai Jyothi Eye Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 300,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1010,
+		"DoctorName" : "Dr.Sree kumar",
+		"Specialisation" : "Opthamologist",
+		"Email" : "sree@gmail.com",
+		"Experience" : 40,
+		"Working" : "Padmavathi Nethralaya Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 1100,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1011,
+		"DoctorName" : "Dr.Shika Fogla",
+		"Specialisation" : "Opthamologist",
+		"Email" : "shikafogla@gmail.com",
+		"Experience" : 31,
+		"Working" : "Apollo Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 800,
+		"Gender" : "F"
+	},
+	{
+		"DoctorId" : 1012,
+		"DoctorName" : "Dr.Sirish Kumar",
+		"Specialisation" : "Opthamologist",
+		"Email" : "sirish@gmail.com",
+		"Experience" : 20,
+		"Working" : "Apollo DRDO Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 800,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1013,
+		"DoctorName" : "Dr.Arjun S",
+		"Specialisation" : "Opthamologist",
+		"Email" : "arjun@gmail.com",
+		"Experience" : 16,
+		"Working" : "Sree Menakshi Eye Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 500,
+		"Gender" : "M"
+	},
+	{
+		"DoctorId" : 1014,
+		"DoctorName" : "Dr.Harinath Babu",
+		"Specialisation" : "Opthamologist",
+		"Email" : "harinath@gmail.com",
+		"Experience" : 18,
+		"Working" : "Agarwals Eye Hospital",
+		"Degree" : "MBBS MS",
+		"Fee" : 400,
+		"Gender" : "M"
+	}
+]
