@@ -2,30 +2,42 @@ package com.hospital.appointment.form;
 
 public class DoctorProperties {
 
-	String id, drname,email, specialization, Time, days;
-	int age;
-	char gender;
+	int docId, consultation, experience;
+	String doc_Name, specialisation , email, ph_No, working , degree, gender;
+
 	
-	DoctorProperties(String id, String drname, int age, char gender, String specialization,String email, String Time, String days){
-		this.id = id;
-		this.drname = drname;
-		this.age = age;
+	DoctorProperties(int docId,String doc_Name,String specialisation ,String email,String ph_No,int experience,String working ,String degree, int consultation,String gender){
+		this.docId = docId;
+		this.doc_Name = doc_Name;
+		this.specialisation = specialisation;
+		this.email =email;
+		this.ph_No = ph_No;
+		this.experience = experience;
+		this.working = working;
+		this.degree = degree;
+		this.consultation = consultation;
 		this.gender = gender;
-		this.specialization = specialization;
-		this.email = email;
-		this.Time = Time;
-		this.days = days;
+
 	}
 	
 	public String drDetils() {
-		return "Dr.Id: "+this.id+
-				"\nDr.Name: "+this.drname+
-				"\nAge: "+this.age+
-				"\nGender: "+this.gender+
-				"\nSpecialization: "+this.specialization+
-				"\nEmail: "+this.email+
-				"\nTime: "+this.Time+
-				"\nDays: "+this.days;
+		return	"Doctor ID: "+docId+"\n"+
+				"Doctor Name  :" + doc_Name + "\n" +
+                "Specialization :" + specialisation + "\n"  +
+                "Email: " + email + "\n" + 
+                "Ph_No: " + ph_No + "\n" +
+                "Experience: " + experience + "\n" +
+                "Working: " + working + "\n" +
+                "Degree: " + degree + "\n" +
+                "Consultation: " + consultation + "\n" +
+                "Gender: " + gender + "\n" ;
+		
+
+	}
+	public String drDetails() {
+		return "Doctor ID: "+docId+"\n"+
+				"Doctor Name  :" + doc_Name + "\n" +
+                "Specialization :" + specialisation + "\n";
 	}
 
 }
