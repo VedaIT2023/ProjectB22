@@ -1,6 +1,10 @@
 package com.vedait.Hospital.Appointment;
 
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class DoctorDetails {
@@ -11,15 +15,20 @@ public class DoctorDetails {
     }
 
     private void initializeDoctors() {
-        doctors.add(new Doctors("Dr.Pavan", "Cardiologist", 101, "9 AM to 10 AM"));
-        doctors.add(new Doctors("Dr.Laxman", "Dermatologists", 102, "10 AM to 11 AM"));
-        doctors.add(new Doctors("Dr.Satish", "Endocrinologists", 103, "11 AM to 12 PM"));
-        doctors.add(new Doctors("Dr.Balaji", "Gastroenterologists", 104, "12 PM to 1 PM"));
-        doctors.add(new Doctors("Dr.Satwik", "Hematologists", 105, "1 PM to 2 PM"));
-        doctors.add(new Doctors("Dr.Lakshmi", "Nephrologists", 106, "2 PM to 3 PM"));
-        doctors.add(new Doctors("Dr.Supriya", "Neurologists", 107, "3 PM to 4 PM"));
-        doctors.add(new Doctors("Dr.Niharika", "Ophthalmologists", 108, "Only in Weekends"));
-        doctors.add(new Doctors("Dr.Lalitha", "Immunologists", 109, "Sunday 10 AM to 1 PM"));
+    	try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/doctordetails", "root", "Pavan@23");
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("select * from doctor_details");
+            while (rs.next()) {
+                doctors.add(new Doctors(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getInt(9),rs.getString(10)));
+            }
+            con.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
     }
 
     public ArrayList<Doctors> getDoctorsList() {

@@ -5,13 +5,14 @@ public class Details {
 
 	 int appointmentno;	
 	 String patientName;
-	 String problem;
+	 String problem,email;
 	 int doctorid;
 	 Date appointmentDateTime;
 	 int age;
+	 long phno;
 	 char gender;
 	    
-	     Details(int appointmentno, int doctorid, String patientName,int age,char gender, String problem) {
+	     Details(int appointmentno, int doctorid, String patientName,int age,char gender, long phno, String email,String problem) {
 	        
 	    	this.appointmentno = appointmentno; 
 	    	this.patientName = patientName;
@@ -20,6 +21,8 @@ public class Details {
 	        this.appointmentDateTime = generateRandomDate();
 	        this.age = age;
 	        this.gender = gender;
+	        this.phno = phno;
+	        this.email = email;
 	        
 	    }
 
@@ -68,6 +71,19 @@ public class Details {
 	        this.gender = gender;
 	    }
 	    
+	    public long getphno() {
+	        return phno;
+	    }
+	    public void setphno(long phno) {
+	        this.phno = phno;
+	    }
+	    
+	    public String getemail() {
+	        return email;
+	    }
+	    public void setemail(String email) {
+	        this.email = email;
+	    }
 	    public int getDoctorID() {
 	        return doctorid;
 	    }
@@ -80,14 +96,15 @@ public class Details {
 	    	 SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy / HH:mm");
 	         String formattedDate = dateFormat.format(appointmentDateTime);
 
-	         
 	        return "Appointment No :" + appointmentno +"\n" +
 	        		"Doctor ID : " + doctorid + "\n" +
 	                "Patient Name :" + patientName + "\n" +
 	        		"Age :" + age + "\n" +
-	                "Gender :" + gender + "\n" +
+	                 "Gender :" + gender + "\n" +
+	                 "Ph-No :" + phno + "\n" +
+	                 "Email :" + email + "\n" +
 	                "Problem :" + problem + "\n" +        
-	                "Appointment Date/Time: " + formattedDate ;
+	                "Appointment Date/Time : " + formattedDate + "\n" ;
 	    }
 	}
 

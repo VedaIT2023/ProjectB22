@@ -1,4 +1,5 @@
 package com.vedait.Hospital.Appointment;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -39,7 +40,7 @@ public class AppointmentMain {
                     break;
                 case 2:
                     bookAppointment();
-                    break;
+                    break;   
                 case 3:
                     viewAppointments();
                     break;
@@ -67,7 +68,7 @@ public class AppointmentMain {
         try {
             doctorId = scanner.nextInt();
         } catch (Exception e) {
-            System.out.println("Invalid input for Doctor ID. Please enter a valid integer.");
+            System.out.println("Invalid input for Doctor ID. Please enter a valid Id.");
             scanner.nextLine();
             return;
         }
@@ -75,7 +76,7 @@ public class AppointmentMain {
         boolean doctorExists = false;
         Doctors selectedDoctor = null;
 
-        for (Doctors doctor : doctorsList) { // Use the doctorsList you retrieved earlier
+        for (Doctors doctor : doctorsList) { 
             if (doctor.getId() == doctorId) {
                 doctorExists = true;
                 selectedDoctor = doctor;
@@ -85,10 +86,9 @@ public class AppointmentMain {
 
         if (doctorExists) {
             System.out.println("Doctor Details:");
-            System.out.println("Doctor Name: " + selectedDoctor.doctorname);
-            System.out.println("Specialization: " + selectedDoctor.specialization);
-            System.out.println("Doctor ID: " + selectedDoctor.doctorid);
-            System.out.println("Timings :" + selectedDoctor.time);
+            System.out.println("Doctor Name: " + selectedDoctor.Doc_Name);
+            System.out.println("Specialization: " + selectedDoctor.Specialisation);
+            System.out.println("Doctor ID: " + selectedDoctor.Doc_Id);
 
             System.out.print("Enter patient name: ");
             String patientName = scanner.next();
@@ -110,7 +110,7 @@ public class AppointmentMain {
             System.out.print("Enter Patient Problem: ");
             String problem = scanner.next();
 
-            Details appointment = new Details(appointmentNo, doctorId, problem, age, gender, patientName);
+            Details appointment = new Details(appointmentNo, doctorId, patientName, age, gender, problem);
             appointments.add(appointment);
 
             System.out.println("Your Appointment is booked successfully with Appointment No: " + appointmentNo++);
@@ -208,5 +208,9 @@ public class AppointmentMain {
         if (!found) {
             System.out.println("Appointment not found.");
         }
+    }
+    
+    static void detail() {
+    	
     }
 }
