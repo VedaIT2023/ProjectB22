@@ -182,30 +182,5 @@ public class AppilicationMain {
                 "\n5.Exit";
     }
 
-    static String dateAndTime() {
-        Random random = new Random();
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DATE, random.nextInt(30) + 1);
 
-        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-        if (dayOfWeek == Calendar.SATURDAY) {
-            calendar.add(Calendar.DATE, 2);
-        } else if (dayOfWeek == Calendar.SUNDAY) {
-            calendar.add(Calendar.DATE, 1);
-        }
-
-        int hour = random.nextInt(8) + 9;
-
-        calendar.set(Calendar.HOUR_OF_DAY, hour);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm a");
-
-        String appointmentDate = dateFormat.format(calendar.getTime());
-        String appointmentTime = timeFormat.format(calendar.getTime());
-
-        return appointmentDate + " " + appointmentTime;
-    }
 }
