@@ -1,156 +1,168 @@
-[
-	{
-		"DoctorId" : 1001,
-		"DoctorName" : "Dr.Saibaba",
-		"Specialisation" : "Opthamologist",
-		"Email" : "saibaba@gmail.com",
-		"Experience" : 50,
-		"Working" : "Sri Sai Jyothi Eye Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 200,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1002,
-		"DoctorName" : "Dr.Prakash Kumar",
-		"Specialisation" : "Opthamologist",
-		"Email" : "prakash@gmail.com",
-		"Experience" : 50,
-		"Working" : "Apollo Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 500,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1003,
-		"DoctorName" : "Dr.Mallika Goyal",
-		"Specialisation" : "Opthamologist",
-		"Email" : "mallika@gmail.com",
-		"Experience" : 26,
-		"Working" : "Apollo Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 700,
-		"Gender" : "F"
-	},
-	{
-		"DoctorId" : 1004,
-		"DoctorName" : "Dr.Naveen Yalamanchili",
-		"Specialisation" : "Opthamologist",
-		"Email" : "naveen@gmail.com",
-		"Experience" : 22,
-		"Working" : "Continental Hospitals",
-		"Degree" : "MBBS MS",
-		"Fee" : 800,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1005,
-		"DoctorName" : "Dr.Harikrishnan V",
-		"Specialisation" : "Opthamologist",
-		"Email" : "harikrishanan@gmail.com",
-		"Experience" : 16,
-		"Working" : "Eyeris EyeCare Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 400,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1006,
-		"DoctorName" : "Dr.NVR Murthy",
-		"Specialisation" : "Opthamologist",
-		"Email" : "murthy@gmail.com",
-		"Experience" : 24,
-		"Working" : "Murthy Eye Hospital, St.Theresa",
-		"Degree" : "MBBS MS",
-		"Fee" : 1200,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1007,
-		"DoctorName" : "Dr.K Padma",
-		"Specialisation" : "Opthamologist",
-		"Email" : "padma@gmail.com",
-		"Experience" : 19,
-		"Working" : "Citizen Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 900,
-		"Gender" : "F"
-	},
-	{
-		"DoctorId" : 1008,
-		"DoctorName" : "Dr.Sirisha",
-		"Specialisation" : "Opthamologist",
-		"Email" : "sirisha@gmail.com",
-		"Experience" : 16,
-		"Working" : "Isha Netralaya Eye Care",
-		"Degree" : "MBBS MS",
-		"Fee" : 600,
-		"Gender" : "F"
-	},
-	{
-		"DoctorId" : 1009,
-		"DoctorName" : "Dr.Advaith Sai",
-		"Specialisation" : "Opthamologist",
-		"Email" : "advaith@gmail.com",
-		"Experience" : 13,
-		"Working" : "Sai Jyothi Eye Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 300,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1010,
-		"DoctorName" : "Dr.Sree kumar",
-		"Specialisation" : "Opthamologist",
-		"Email" : "sree@gmail.com",
-		"Experience" : 40,
-		"Working" : "Padmavathi Nethralaya Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 1100,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1011,
-		"DoctorName" : "Dr.Shika Fogla",
-		"Specialisation" : "Opthamologist",
-		"Email" : "shikafogla@gmail.com",
-		"Experience" : 31,
-		"Working" : "Apollo Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 800,
-		"Gender" : "F"
-	},
-	{
-		"DoctorId" : 1012,
-		"DoctorName" : "Dr.Sirish Kumar",
-		"Specialisation" : "Opthamologist",
-		"Email" : "sirish@gmail.com",
-		"Experience" : 20,
-		"Working" : "Apollo DRDO Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 800,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1013,
-		"DoctorName" : "Dr.Arjun S",
-		"Specialisation" : "Opthamologist",
-		"Email" : "arjun@gmail.com",
-		"Experience" : 16,
-		"Working" : "Sree Menakshi Eye Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 500,
-		"Gender" : "M"
-	},
-	{
-		"DoctorId" : 1014,
-		"DoctorName" : "Dr.Harinath Babu",
-		"Specialisation" : "Opthamologist",
-		"Email" : "harinath@gmail.com",
-		"Experience" : 18,
-		"Working" : "Agarwals Eye Hospital",
-		"Degree" : "MBBS MS",
-		"Fee" : 400,
-		"Gender" : "M"
-	}
-]
+DoctorId,DoctorName,Specialisation,Email,PhoneNumber,Experience,Working,Degree,Fee,Gender
+1001,Dr.Saibaba,Opthamologist,saibaba@gmail.com,7676276336,50,"Sri Sai Jyothi Eye Hospital","MBBS MS",200,M
+1002,"Dr.Prakash Kumar",Opthamologist,prakash@gmail.com,6837487338,50,"Apollo Hospital","MBBS MS",500,M
+1003,"Dr.Mallika Goyal",Opthamologist,mallika@gmail.com,8743386463,26,"Apollo Hospital","MBBS MS",700,F
+1004,"Dr.Naveen Yalamanchili",Opthamologist,naveen@gmail.com,9734374734,22,"Continental Hospitals","MBBS MS",800,M
+1005,"Dr.Harikrishnan V",Opthamologist,harikrishanan@gmail.com,7837487343,16,"Eyeris EyeCare Hospital","MBBS MS",400,M
+1006,"Dr.NVR Murthy",Opthamologist,murthy@gmail.com,9377348374,24,"Murthy Eye Hospital, St.Theresa","MBBS MS",1200,M
+1007,"Dr.K Padma",Opthamologist,padma@gmail.com,6338733334,19,"Citizen Hospital","MBBS MS",900,F
+1008,Dr.Sirisha,Opthamologist,sirisha@gmail.com,8343324636,16,"Isha Netralaya Eye Care","MBBS MS",600,F
+1009,"Dr.Advaith Sai",Opthamologist,advaith@gmail.com,8973777733,13,"Sai Jyothi Eye Hospital","MBBS MS",300,M
+1010,"Dr.Sree kumar",Opthamologist,sree@gmail.com,9847347873,40,"Padmavathi Nethralaya Hospital","MBBS MS",1100,M
+1011,"Dr.Shika Fogla",Opthamologist,shikafogla@gmail.com,6873477347,31,"Apollo Hospital","MBBS MS",800,F
+1012,"Dr.Sirish Kumar",Opthamologist,sirish@gmail.com,9874737470,20,"Apollo DRDO Hospital","MBBS MS",800,M
+1013,"Dr.Arjun S",Opthamologist,arjun@gmail.com,6973473734,16,"Sree Menakshi Eye Hospital","MBBS MS",500,M
+1014,"Dr.Harinath Babu",Opthamologist,harinath@gmail.com,9573646384,18,"Agarwals Eye Hospital","MBBS MS",400,M
+1015,"Dr.Alok Varma",Orthopedics,alokvarma@gmail.com,9638447738,31,"Dr.Alok Varma Orthopedic Clinic","MBBS,Diploma in Orthopedics",800,M
+1016,"Dr.Sneha Sharma",Orthopedics,snehasharma@gmail.com,9347234521,9,"Fit N Fly Physiotherapy & Fitness Centre","MBBS,Diploma in Orthopedics",300,F
+1017,"Dr.Rajiv Patel",Orthopedics,rajivpatel@gmail.com,9456378211,27,"Strong Memorial Hospital","MD,Orthopedic",500,M
+1018,"Dr.V K Sahni",Orthopedics,sahni@gmail.com,9347496900,39,"Dr.V K Sahni Clinic","MBBS,MS Orthopedics",900,F
+1019,Dr.Neelabh,Orthopedics,neelabh@gmail.com,9347932019,28,"BLK-Max Super Speciality Hospital","MBBS,MS Orthopedics",1200,M
+1020,"Dr.Pankaj Bajaj",Orthopedics,pankaj@gmail.com,8745012390,27,"IBS Hospital","MBBS,MS Orthopedics",1200,M
+1021,"Dr.Pradeep Kriplani",Orthopedics,pradeep@gmail.com,9867093218,18,"IBS Hospital","MBBS,MS Orthopedics",1200,M
+1022,"Dr.Rakesh Kumar",Orthopedics,rakesh@gmail.com,7612540382,23,"Jeewan Mala Hospitals","MBBS,MS Orthopedics",800,M
+1023,"Dr.Anil Raheja",Orthopedics,anil@gmail.com,8721311262,26,"Jeewan Mala Hospitals","MBBS,MS Orthopedics",800,M
+1024,"Dr.Naveen Talwar",Orthopedics,naveen@gmail.com,9765410943,32,"Aashlok Hospital","MBBS,MS Orthopedics",1500,M
+1025,"Dr.Sai Lakshmi Daayana","Oncologist,Gynecologist",Daayana@gmail.com,9986867523,23,"Apollo Hspl","MRCOG(UK), MBBS",1000,F
+1026,"Dr.Ravi Chander Veligeti","Oncologist,Laproscopic Surgeon",ravichander@gmail.com,8887965235,21,"Continental Hspl,Suraksha Hspl","MBBS, MS",750,M
+1027,"Dr.AVS Suresh","Hematologic Oncologist",suresh@gmail.com,6305298765,24,"Continental Hspl,AVS Suresh clinic",,900,M
+1028,"Dr.Chinnababu Sunkavalli","Surgical Oncologist",chinnababu@gmail.com,7895684218,24,"Apollo Hspl","MBBS,MS",1000,M
+1029,"Dr.Apoorva Kulkarni","Radiation Oncologist",apoorva@gmail.com,8876254821,10,"Continental Hspl","MBBS,DNB",1000,F
+1030,"Dr.S.V.S.S Prasad","Medical Oncologist",prasad@gmail.com,7542169583,41,"Apollo Hspl","MBBS, MD,DM",1200,M
+1031,"Dr.P Vinitha Reddy","Radiation Oncologist",vinitha@gmail.com,8895476213,26,"American Hspl,Sun city Hspl","MBBS,MD",800,F
+1032,"Dr.Arun Lingutla","Medical Oncologist",arun@gmail.com,7859642834,20,"American Hspl,Care Hspl","MBBS, MD,DM",800,M
+1033,"Dr.Trilok Prata[p singh",Oncologist,trilokpratap@gmail.com,9985467213,31,"Apollo Hspl","MBBS, MS,MCh",1500,M
+1034,"Dr.Aazaad Chandrasheker","Surgical Oncologist",chandrasheker@gmail.c0m,8879456812,13,"Tx Hspl","MBBS,MCh",600,M
+1035,"Dr. M S S Keerthi","Surgical Oncologist","keerthi@gmail,com",6302185479,13,"Tulasi Hspl","MBBS,MCh",700,F
+1036,"Dr. Ram Prahlad","Medical Oncologist",ramprahlad@gmail.com,7869542318,8,"Mythri Hspl","MBBS, DM",650,M
+1037,"Dr.Pratap varma penmetsa","Surgical Oncologist",pratapvarma@gmail.com,9030331612,23,"Citizens Hspl","MBBS, MS,MCh",800,M
+1038,"Dr.Bharat Patodiya","Medical Oncologist",bharat@gmail.com,8887845128,15,"Sunshine Hspl, AIG Hspl","MBBS,MD,DNB",750,M
+1039," Dr.Rajesh Kumar ",Cardiologist,drrajesh@gmail.com,9953275729,15,"Cardiac Center Hospital","MD,Cardiologist",500,M
+1040,"Dr.Priya Sharma",Cardiologist,drpriya@gmail.com,7373737585,12,"City Heart Hospital","MD,Cardiologist",500,M
+1041,"Dr.Anil Kumar",Cardiologist,dranil@gmail.com,8632867394,18,"Metro Cardiology Clinic","MD,Cardiologist",1000,M
+1042,"Dr.Nidhi Patel",Cardiologist,drnidhi@gmail.com,6728932845,10,"Heart Care Hospital","MD,Cardiologist",1200,M
+1043,"Dr.Sanjay Singh",Cardiologist,drsanjay@gmail.com,6327389553,14,"Cardiopullse Clinic","MD,Cardiologist",1200,M
+1044,"Dr.Rakesh Kumar",Orthopedics,rakesh@gmail.com,7612540382,23,"Jeewan Mala Hospitals","MBBS,MS Orthopedics",800,M
+1045,"Dr.Pradeep Kriplani",Orthopedics,pradeep@gmail.com,9867093218,18,"IBS Hospital","MBBS,MS Orthopedics",1200,M
+1046,"Dr.Pankaj Bajaj",Orthopedics,pankaj@gmail.com,8745012390,27,"IBS Hospital","MBBS,MS Orthopedics",1200,M
+1047,"Dr.Sunil Kumar",Orthopedics,sunil@gmail.com,7698049876,22,"Jeewan Mala Hospitals","MBBS,MS Orthopedics",800,M
+1048,Dr.Neelabh,Orthopedics,neelabh@gmail.com,9347932019,28,"BLK-Max Super Speciality Hospital","MBBS,MS Orthopedics",1200,M
+1049,"Dr.V K Sahni",Orthopedics,sahni@gmail.com,9347496900,39,"DRr.V K Sahni Clinic","MBBS,MS Orthopedics",900,F
+1050,"Dr.Kapur B",Psychiatrist,kapur123@gmail.com,9200987721,45,"Manipal Hospital","MBBS, M.D. (Psychiatry)",2130,M
+1051,"Dr.Safiya M.S",Psychiatrist,safiya123@gmail.com,7200145670,18,"Mind & Brain Hospital","MBBS, Diploma in Psychiatry",1500,F
+1052,"Dr.Rahul Gupta",Cardiologist,drraahul@gmail.com,6735902572,21,"City Cardiology Hospital","MD,Cardiologist",1050,M
+1053,"Dr.Kapur B",Psychiatrist,kapur123@gmail.com,9200987721,45,"Manipal Hospital","MBBS, M.D. (Psychiatry)",2130,M
+1054,"Dr.Safiya M.S",Psychiatrist,safiya123@gmail.com,7200145670,18,"Mind & Brain Hospital","MBBS, Diploma in Psychiatry",1500,F
+1055,"Dr.Harsha GT",Psychiatrist,harsha123@gmail.com,9266345721,10,"Manipal Hospitals Yeshwanthpur","MBBS, M.D. (Psychiatry)",1000,M
+1056,"Dr.Menna Gnanasekharan",Psychiatrist,menna123@gmail.com,8150145727,28,"Reach Psychiatry And Counselling Centre ","MBBS, CCT, DABPAN, M.D. (Psychiatry)",2500,F
+1057,"Dr.Swapana B",Psychiatrist,swapna123@gmail.com,9882145721,21,"Apollo Clinic","MBBS, M.D. (Psychiatry)",1550,F
+1058,"Dr.Vidhaya Jothi.N",Psychiatrist,vidhya123@gmail.com,9200774720,7,"Trilife Hospital","MBBS, M.D. (Psychiatry), DNB - Psychiatry",1500,F
+1059,"Dr.Shobha Krishna",Psychiatrist,shobha123@gmail.com,8299245721,31,"Apollo Speciality Hospitals","MBBS, MRCPsych",1500,F
+1060,"Dr.Venkathesh Babu GM",Psychiatrist,venkatesh123@gmail.com,7798102523,17,"Compathy Health","MBBS, M.D. (Psychiatry)",1000,M
+1061,"Dr.Sumanth TP",Psychiatrist,sumanth123@gmail.com,8211314572,17,"Vijayanagar Health Centre","M.D. (Psychiatry), MBBS",1000,M
+1062,Dr.Sushruth,Psychiatrist,sushruth123@gmail.com,9201783721,11,"Beautiful Mind Healthcare","MBBS, M.D. (Psychiatry)",750,M
+1063,"Dr.Sudhir Hebbar",Psychiatrist,sudhir123@gmail.com,8207845721,30,"Bhargava Mind Clinic","MBBS, DNB - Psychiatry",800,M
+1064,"Dr.Anand Jayaraman",Psychiatrist,anand123@gmail.com,7206745721,26,"Manipal Hospital","MBBS, MRCPsych",1500,M
+1065,"Dr.Manjunath H",Psychiatrist,manjunath123@gmail.com,8209155721,24,"Apollo Clinic","DPM (Psychiatry), MBBS",800,M
+1066,"Dr.Shree Lakshmi Mallya",Psychiatrist,lakshmi123@gmail.com,9200335721,5,"Mind & Brain Hospital","MBBS, M.D. (Psychiatry)",1000,F
+1067,"Dr.Vijay Mehtry",Psychiatrist,vijay123@gmail.com,8207845722,15,"Phoenix Psychiatry & Psychotherapy","MBBS, M.D. (Psychiatry)",800,M
+1068,"Dr.Ruchi Tandon",Gynecologist,Ruchi00@gmail.com,9345629071,18,"SCI International Hospital","MBBS, MS - Obstetrics & Gynaecology",1000,M
+1069,"Dr.Sridevi K",Gynecologist,Sridevi01@gmail.com,8000580023,24,"Amor Hospitals","MBBS, DNB - Obstetrics & Gynecology",600,M
+1070,"Dr.K Suma",Gynecologist,suma02@gmail.com,9006719031,35,"Prasad Hospital","MBBS, DGO, MD - Obstetrics & Gynaecology",700,M
+1071,Dr.Radhika,Gynecologist,Radhika03@gmail.com,7504666333,19,"Medicover Woman & Child Hospitals","MBBS, MD - Obstetrics & Gynaecology",700,M
+1072,"Dr.Deepthi Raidu",Gynecologist,Deepthi04@gmail.com,6300237300,16,"Tx Hospitals","MBBS, MS - Obstetrics & Gynaecology",900,M
+1073,Dr.R.Meenakshi,Gynecologist,Meenakshi05@gmail.com,9959710156,23,"Medicover Woman & Child Hospitals","MBBS, DGO, DNB - Obstetrics & Gynecology",1000,M
+1074,"Dr.Swathi Reddy",Gynecologist,Swathi06@gmail.com,9348865968,15,"Himagiri Hospitals","MBBS, DGO- Obstetrics & Gynaecology",1500,M
+1075,"Dr.Vangallu Padmini",Gynecologist,Padmini07@gmail.com,9166274680,12,"Apollo Cradle & Children’s Hospital","MBBS, DGO, DNB - Obstetrics & Gynecology",500,M
+1076,"Dr.Puja Lavania",Gynecologist,Puja08@gmail.com,9848286083,10,"Life Care Gynaecology Hospital","DGO, DNB - Obstetrics & Gynecology, MBBS",800,M
+1077,"Dr.G Jayanthi",Gynecologist,Jayanthi09@gmail.com,9848286084,9,"J.S. Hospitals - Ortho, Maternity and General","MBBS, MS - Obstetrics & Gynaecology",700,M
+1078,Dr.D.Sreedhar,Neurologist,Sreedhar21@gmail.com,9876543218,57,"Svs Hospital","MBBS | MD - General Medicine | DM - Neurology",600,M
+1079,"Dr.Srikant jawalkar",Neurologist,Srikantha@gmail.com,9876543219,49,"Dr.Srikanth Neuro And Ortho Clinic","DM - Neurology | MD - General Medicine | MBBS",700,M
+1080,Dr.G.Satyanarayana,Neurologist,Satyanarayana@gmail.com,9876543217,45,"Care Hosiptal,Vijaya Health Care","MBBS | MD - General Medicine | DM - Neurology",400,M
+1081,"Dr.Gopal Poduval",Neurologist,Gopalpoduval2@gmail.com,9876543216,30,"Care Hosiptal","MBBS | MD - Medicine | DNB - Neurology",600,M
+1082,"Dr.Umesh Thukaram",Neurologist,Umesh@gmail.com,9876543215,30,"Vinn Hosiptal","MD - General Medicine | MBBS | DM - Neurology | DNB - Neurology",600,M
+1083,"Dr.Ateequr rehman",Neurologist,Ateequrrehman@gmail.com,9876543214,28,"Citizens Speciality Hosiptal,Virinchi Hosiptal",,750,M
+1084,"Dr.Aparna Kumar",Neurologist,Aparnakumar@gmail.com,9876543213,26,"Himagiri Hosiptal,Citizens Speciality Hosiptal","MBBS | MD - Medicine | DNB - Neurology",650,M
+1085,"Dr.V N Mathur",Neurologist,Marthurr@gmail.com,9876543288,23,"Vivekananda Hosiptal","MBBS | DM - Neurology | MD - Neuropsychiatry",600,M
+1086,"Dr.Umesh Prasad Sharma",Neurologist,Umeshprasad@gmail.com,9876543287,22,"Vivekananda Hosiptal","MBBS, DM - Neurology, Doctor of Medicine",600,M
+1087,"Dr.ChandraSekhar Reddy",Neurologist,Chandrasheker@gmail.c0m,9876543286,20,"Tanvir Hospital,Citi Neuro Centre","MBBS, MD - General Medicine, DM - Neurology",600,M
+1088,"Dr.Meghana potluri",Neurologist,meghana96@gmail.com,9014529534,8,"Manipal Hospital","MBBS,MS-ENT",900,M
+1089,"Dr.Mohammed rafi",Neurologist,rafi123@gmail.com,9014529535,9,"Medicover cancer hospital","MBBS,MS-ENT",400,M
+1090,"Dr.Vishnu Veerapaneni",Neurologist,vishnu234@gmail.com,9014529536,35,"Swasa Hospital","MBBS,Diploma",300,M
+1091,"Dr.Ramana prasad V.V",Neurologist,ramana627@gmail.com,9035698209,23,"kims Hospital","MBBS,Diploma",350,M
+1092,"Dr.Chandra Mohan",Neurologist,chandra722@gmail.com,9564852242,22,"Leelavathi Hospital","MBBS,Diploma",350,M
+1093,"Dr.Sonali Jain",Neurologist,"Dr.Sonali Jain",9564852243,31,"Apollo Hospital","MBBS,MD",800,M
+1094,Dr.yashaswi,Neurologist,yashaswi@gmail.com,9564852244,18,"Apollo Clinic Hospital","MBBS,DLO",650,M
+1095,"Dr.Shruti Manjunath",Neurologist,shruti34@gmail.com,9564852245,5,"Apollo Hospital","MBBS,MS-ENT",700,M
+1096,"Dr.Rithika Bhat",Neurologist,rithika@gmail.com,9564852246,5,"Apollo Hospital","MBBS,MS",700,M
+1097,"Dr.Akriba Ahmad",Neurologist,akriba@gmail.com,9564852247,20,"Apollo Hospital","MBBS,DLO",850,M
+1098,"Dr,.Akash Mahalle",Radiologist,akash65@gmail.com,9959771926,10,"Care Hospital","MBBS,MD",1000,M
+1099,"Dr.Amit Ingle",Radiologist,amit67@gmail.com,240667666,6,"Care Hospital","MBBS,DMRD",900,M
+1100,"Dr.Amit Kumar Yadav",Radiologist,Yadav34@gmail.com,9140681085,5,"Care Hospital","MBBS,MD",1000,M
+1101,"Dr.Belman Murali",Radiologist,murali@gmail.com,9140681065,20,"Care Hospital","MBBS,MD",1500,M
+1102,"Dr.Brijendra Prakash",Radiologist,Prakash@gmail.com,9140681065,25,"Care Hospital",DMRD,800,M
+1103,"Dr.Chandrashekar Sahu",Radiologist,chandra54@gmail.com,9140681065,8,"Care Hospital","MBBS,MD",500,M
+1104,"Dr.Sailaja D",Radiologist,sailaja@gmail.com,9140681065,20,"Care Hospital","MBBS,PG DIPLOMA",800,M
+1105," Dr.Gayatri Gadiyaram",Radiologist,gayatri54@gmail.com,9140681065,14,"Care Hospital","MBBS,DNB",1000,M
+1106,"Dr.Irene Faith Manoja",Radiologist,Irnefaithmanoja@gmail.com,9140681065,5,"Care Hospital","MBBS,DNB",500,M
+1107,"Dr.Rajeev Vanka",Radiologist,vanka@gmail.com,9140681065,8,"Care Hospital","MBBS,DMRD,DNB",1000,M
+1108,"Dr.EC Vinaya Kumar",ENT,Vianya@gmail.com,9834657892,33,"Apollo Hospitals","MBBS ,DLO, MS",800,M
+1109,"Dr.Jaswinder Singh Saluja",ENT,jaswinder@gmail.com,6843789576,22,"Apollo Hospitals","MBBS,MS-ENT",500,M
+1110,"Dr.M.V.J Prasanth",ENT,prasanth@gmail.com,9834652784,19,"Pace Hospitals","MBBS,MS-ENT",500,M
+1111,"Dr.Kota Ram babu",ENT,ram67@gmail.com,8765432567,42,"Apollo Hospitals","MBBS,MS-ENT",1000,M
+1112,Dr.Nalinikanth,ENT,nalinikanth@gmail.com,9876543210,40,"Global Hospitals","MBBS,DLO",1000,M
+1113,"Dr.Sushmitha B",ENT,sushmitha@gmail.com,8793456783,10,"Aster Hospitals","Diploma,DNB,MBBS",500,M
+1114,"Dr.Venugopala Reddy",ENT,venu65@gmail.com,8765456789,42,"Sunshine Hospitals","MBBS,MS-ENT",1000,M
+1115,Dr.Rajasekharam,ENT,rajasekharam@gmail.com,9877678965,14,"Aster Hospitals","MBBS,MS-ENT",400,M
+1116,"Dr.M Naveen kumar",ENT,naveen21@gmail.com,8866848955,20,"Sunshine Hospitals","DLO,DNB,MBBS",600,M
+1117,"Dr.Hemanth Kumar",ENT,hemanth23@gmail.com,7834683658,21,"Sunshine Hospitals","DLO,DNB,MBBS",800,M
+1118,"Dr.Anshul Warman",Dermatologist,anshulwarman@gmail.com,7845961320,20,"Apollo Hospitals","MBBS,MD(Drema)",800,F
+1119,"Dr.Balaganpathy R",Dermatologist,balaganpathyr@gmail.com,9658741236,8,"Apollo Hospitals","MBBS ,MD",450,M
+1120,"Dr.D M Mahajan",Dermatologist,dmmahajan@gmail.com,9856325873,35,"Apollo Hospitals","MBBS,MD(Dermatology)",2000,M
+1121,"Dr.Pooja Solaniki Vysa",Dermatologist,poojasolanikivysa@gmail.com,9856321456,7,"Apollo Hospitals","MBBS,MD",700,F
+1122,"Dr.Jyothi Tiwari",Dermatologist,jyothitiwari123@gmail.com,9874563210,5,"Aesthetic Caroots Hospital","MBBS,BDS",500,F
+1123,"Dr.Chanchal Chaudhary",Dermatologist,chanchalchaudhary@gmail.com,8745896521,11,"La Famuex Derma","MBBS ,DDVL",700,F
+1124,"Dr.Akanshya Baruah",Dermatologist,akankshyabaruah@gmail.com,8214596378,3,"Aesthetic Caroots Hospital","MBBS,MD",650,F
+1125,"Dr.Durai babu mukkara",Dermatologist,duraibabumukkara@gmail.com,6521478965,20,"DM Skin and Dental Clinic","MBBS ,MD,DSTD",1000,M
+1126,"Dr.Juvita Rasuinha",Dermatologist,juvitarasquinha@gmail.com,6302010456,18,"Dr.juvita hair and skin clinic","MBBS MD",500,F
+1127,"Dr.Parthasarathi Duttha Roy",Dermatologist,parthasarathiduttharoy@gmail.com,6523417890,20,"Asian hair and skin Hospitals","MBBS,DDVL,MD",1000,M
+1128,"Dr.Ramesh Srinivasan","Pediatrician ",Rameshsrinivas@gmail.com,8122923456,27,"Apollo Hospitals ","MD,MBBS,CCT",800,M
+1129,"Dr.Samiya Razvi ","Pediatrician ",Razvi@gmail.com,7406390872,34,"Apollo Hospitals ","MBBS,DCH",1200,F
+1130,Dr.P.Keerthi,"Paediatrician ",Dr.keerthi@gmail.com,8724168885,21,"Tripura Children","MBBS, DCH",400,F
+1131,"Dr.Bhargavi Arun","Pediatrician ",ArunBhargavi@gmail.com,8123678902,16,"Apollo Hospitals ","MBBS,DCH",500,F
+1132,"Taheer Shaik dr","Pediatrician ",Shaiktareer@gmail.com,6309754363,17,"Tanvir hospital ","MBBS,MD",800,M
+1133,"Dr.Kiran kumar","Pediatrician ",Kiran@gmail.com,9121923206,19,"Apollo cradle ","MBBS, DCH",1400,F
+1134,"Dr.A.SatyaNarayan Murthy","Pediatrician ",Murthy@gmail.com,9121923200,40,"Child protect ","MBBS, MD",1800,F
+1135,Dr.SvS.Sreedhar,"Pediatrician ",Sreedhar4@gmail.com,8724180688,34,"Apollo cradle ","MBBS,DCH",3000,F
+1136,"Dr. Praveen Kumar Etta",Nephrologist,Praveenkumaretta@gmail.com,6302894705,17,"Tx Hospitals","MBBS, MD - General Medicine, DM - Nephrology",500,M
+1137,"Dr. Kiran Kumar Mukku",Nephrologist,kirankumarmukku@gmail.com,9550274743,19,"Dr. Kiran's Renal Center","MBBS, MD - General Medicine, DM - Nephrology",1000,M
+1138,"Dr. Santosh Hedau",Nephrologist,Santoshhedau@gmail.com,4071963653,17,"Idea Clinics","MBBS, DNB - Nephrology",700,M
+1139,"Dr. Rahul Patibandla",Nephrologist,Rahulpatibandla@gmail.com,9704302709,16,"Amor Hospitals","MBBS, MD - General Medicine, DNB - Nephrology",600,M
+1140,"Dr. K.Kranthi kumar",Nephrologist,Kkranthikumar@gmail.com,8626875426,11,"Asian Institute Of Nephrology Urology","MBBS, MD - General Medicine, DM - Nephrology",700,M
+1141,"Dr. Mamidi Varun",Nephrologist,Mamidivarun@gmail.com,7559864552,12,"Asian Institute Of Nephrology Urology","MBBS, MD - General Medicine, DM - Nephrology",700,M
+1142,"Dr. Ramesh Vasa",Nephrologist,Rameshvasa@gmail.com,6558672341,20,"Sikara Hospitals","MBBS, MD - General Medicine, DM - Nephrology",600,M
+1143,"Dr. Arun Kumar Donakonda",Nephrologist,Arunkumardonakonda@gmail.com,9874587231,10,"Medicover Hospitals","MBBS, MD - General Medicine, DM - Nephrology",500,M
+1144,"Dr. J.AL.Ranganath",Nephrologist,Jalranganath@gmail.com,6785344543,23,"Medicover Hospitals","MBBS, DM - Nephrology",500,M
+1145,"Dr. Kamal Kiran",Nephrologist,KamalKiran@gmail.com,4049172437,29,"Medicover Hospitals","MBBS, MD - General Medicine, DNB - Nephrology",1000,M
+1146,"Dr. Bhavani M",Pathologist,Bhavanim@gmail.com,7865543213,44,"SBR Diagnostics & Polyclinic","MBBS, MD ",500,F
+1147,"Dr. Lavanya",Pathologist,Lavanya@gmail.com,4067822495,13,"Srinivas Children's Clinic","Diploma in Clinical Pathology, MBBS",300,F
+1148,"Dr. MOHD SHOIAB ZEESHAN",Pathologist,Mohdshoiab@gmail.com,9876543210,9,"SRL diagnositicts","MBBS, MD",0,M
+1149,"Dr. B. Vishal Rao",Pathologist,Vishalrao@gmail.com,4067822783,14,"Basavatarakam Indo American Cancer Hospital & Research Institute",MD,500,M
+1150,"Dr. C Snehalatha",Pathologist,Snehalatha@gmail.com,4067822370,22,"Omega Hospital","MBBS, MD, DNB",400,F
+1151,"Dr. Mohd Ziaur Rahman Khan",Pathologist,Mohdziaur@gmail.com,4067822370,15,"Omega Hospital","MBBS, MD, DNB",400,M
+1152,"Dr. Monal Dayal",Pathologist,Monaldayal@gmail.com,4067822370,24,"Omega Hospital","MBBS, DNB",400,F
+1153,"Dr. Sashi Kiran Kayetha",Pathologist,Sashikiran@gmail.com,4067822370,10,"Omega Hospital","MBBS, MD",400,M
+1154,"Dr. Md.Sikinder Hayath",Pathologist,Mdsikinder@gmail.com,4041891805,54,"Brite Smiles Dental Clinic","MBBS, MD ,Diploma in Clinical Pathology",200,M
+1155,"Dr. S. Dhan Raj Reddy",Pathologist,Dhanraj@gmail.com,8765432109,26,"Apollo Hospital","MBBS, DNB",500,M
+1156,Dr.S.Ramya,Pulmonology,ramyas@gmail.com,9573865748,19,"Sunshine Hospitals","MBBS,MD",600,F
+1157,Dr.I.Anusha,Pulmonology,anushi@gmail.com,9934775581,6,"Apollo  Hospital","MBBS,DM",900,F
+1158,Dr.Omprakash,Pulmonology,omprakasht@gmail.com,8834768533,5,"Mount Sinai Hospital","MD,MBBS,CCT",1500,M
+1159,Dr.M.Anil,Pulmonology,anilm2423@gmail.com,9957664482,20,"Tripura Children",MBBS,500,M
+1160,"Dr.Y.Siva Reddy",Pulmonology,sivareddyy@gmail.com,9657437782,25,"Care Hospital",DM,700,M
+1161,Dr.M.Rose,Pulmonology,rosem@gmail.com,9136482391,8,"kims Hospital","MBBS,MD",900,F
+1162,Dr.T.Sabari,Pulmonology,sabari7554@gmail.com,9373845667,20,"Grace Hospital","MBBS,DM",1000,F
+1163,"Dr.G.Rajesh ",Pulmonology,rajesh467@gmail.com,9900447256,14,"Aster Hospitals","MBBS,DM",1500,M
+1164,Dr.S.Firoz,Pulmonology,sfiroz87@gmail.com,8094768211,18,"Sunshine Hospitals",MBBS,800,M
+1165,Dr.A.Gopal,Pulmonology,gopala56@gmail.com,9977445634,12,"Apollo  Hospital","MBBS,MD",500,M
+1166,Dr.B.Mahesh,Pulmonology,maheshb98@gmail.com,9776455226,22,"Mount Sinai Hospital","MBBS,DM",800,M
+1167,Dr.R.Supraja,Pulmonology,suprajar76@gmail.com,9857352674,16,"kims Hospital",MBBS,1000,F
