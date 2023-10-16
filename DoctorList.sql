@@ -1,26 +1,27 @@
-CREATE TABLE DoctorsList (
-    DoctorId int auto_increment,
-    DoctorName varchar(50) not null,
-    Specialisation varchar(50) not null,
-    Email varchar(50),
-    Experience int not null,
-    Working varchar(50),
-    Degree varchar(10) not null,
-    Fee int not null,
-    Gender varchar(10) not null,
-    primary key (DoctorId)
+CREATE TABLE doctor_details (
+    doc_Id int auto_increment,
+    d_name varchar(50) not null,
+    specialisation varchar(50) not null,
+    email varchar(50),
+    experience int not null,
+    working varchar(50),
+    degree varchar(10) not null,
+    consultation int not null,
+    gender varchar(10) not null,
+    primary key (doc_Id)
 );
+
 
 alter table DoctorsList auto_increment=1001;
 
 alter table doctorslist
 add PhoneNumber varchar(10) after Email;
 
-alter table DoctorsList
+alter table doctor_details
 modify Degree varchar(100),
 modify Working varchar(100);
 
-INSERT INTO DoctorsList (DoctorName, Specialisation, Email, PhoneNumber, Experience, Working, Degree, Fee, Gender)
+INSERT INTO (doc_Id,d_name,specialisation,email,phone_number,experience,working,degree,consultation,gender)
 VALUES 	('Dr.Saibaba', 'Opthamologist', 'saibaba@gmail.com',"7676276336", 50, 'Sri Sai Jyothi Eye Hospital', 'MBBS MS', 200, 'M'),
 	('Dr.Prakash Kumar', 'Opthamologist', 'prakash@gmail.com', "6837487338", 50,'Apollo Hospital', 'MBBS MS', 500, 'M'),
 	('Dr.Mallika Goyal', 'Opthamologist', 'mallika@gmail.com',"8743386463", 26,'Apollo Hospital', 'MBBS MS', 700, 'F'),

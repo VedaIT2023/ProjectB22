@@ -78,10 +78,10 @@ public class AppointmentForm {
             try{  
         		Class.forName("com.mysql.jdbc.Driver");  
         		Connection con=DriverManager.getConnection(  
-        		"jdbc:mysql://localhost:3306/DoctorsList","root","@Saggu052");  
+        		"jdbc:mysql://localhost:3306/a2zdb","root","@Saggu052");  
 
         		Statement stmt=con.createStatement();  
-        		ResultSet rs=stmt.executeQuery("select * from DoctorsList");  
+        		ResultSet rs=stmt.executeQuery("select * from doctor_details");  
         		while(rs.next())
         			if(rs.getInt(1)==docId1) {
         				System.out.println("Doctor ID: "+rs.getInt(1)+"\nDoctor Name: "+rs.getString(2)+"\nSpecialisation: "+rs.getString(3)+"\n");
@@ -179,10 +179,10 @@ public class AppointmentForm {
     	
     	System.out.println("Doctor Information");
         
-        String url = "jdbc:mysql://localhost:3306/DoctorsList"; // JDBC URL
+        String url = "jdbc:mysql://localhost:3306/a2zdb"; // JDBC URL
         String username = "root"; // MySQL UserName
         String password = "@Saggu052"; // MySQL password
-        String query = "SELECT * FROM DoctorsList"; // SQL query
+        String query = "SELECT * FROM doctor_details"; // SQL query
 
         try {
             // Load the MySQL JDBC driver
