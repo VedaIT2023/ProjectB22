@@ -18,7 +18,7 @@ public class DoctorDetails {
     	try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/doctordetails", "root", "Pavan@23");
+                    "jdbc:mysql://localhost:3306/a2z_db", "root", "Pavan@23");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from doctor_details");
             while (rs.next()) {
