@@ -78,7 +78,7 @@ public class AppointmentForm {
             try{  
         		Class.forName("com.mysql.jdbc.Driver");  
         		Connection con=DriverManager.getConnection(  
-        		"jdbc:mysql://localhost:3306/a2zdb","root","@Saggu052");  
+        		"jdbc:mysql://localhost:3306/a2z_db","root","@Saggu052");  
 
         		Statement stmt=con.createStatement();  
         		ResultSet rs=stmt.executeQuery("select * from doctor_details");  
@@ -179,7 +179,7 @@ public class AppointmentForm {
     	
     	System.out.println("Doctor Information");
         
-        String url = "jdbc:mysql://localhost:3306/a2zdb"; // JDBC URL
+        String url = "jdbc:mysql://localhost:3306/a2z_db"; // JDBC URL
         String username = "root"; // MySQL UserName
         String password = "@Saggu052"; // MySQL password
         String query = "SELECT * FROM doctor_details"; // SQL query
