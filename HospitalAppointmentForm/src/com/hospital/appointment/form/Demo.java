@@ -14,7 +14,7 @@ class Demo {
 		Statement stmt=con.createStatement();  
 		ResultSet rs=stmt.executeQuery("select * from doctor_details");  
 		while(rs.next())  
-				System.out.println(rs.getInt(1)+" "+rs.getString(2));
+				System.out.println(rs.getInt(1)+" "+rs.getString(7));
 		con.close();  
 		}catch(Exception e){ System.out.println(e);}  
  		
