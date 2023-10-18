@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.*;
 import java.util.ArrayList;
@@ -34,7 +35,34 @@ public class AppointmentForm {
     	patientCounter++;
     	return patientCounter;
     }
-    
+    static boolean isPatientNameAlreadyExists(String name) {
+        String url = "jdbc:mysql://localhost:3306/a2z_db";
+        String username = "root";
+        String password = "@Saggu052";
+        String query = "SELECT p_name FROM patient_details WHERE p_name = ?";
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            try (Connection con = DriverManager.getConnection(url, username, password)) {
+                System.out.println("Connection Established successfully");
+
+                try (PreparedStatement preparedStatement = con.prepareStatement(query)) {
+                    preparedStatement.setString(1, name);
+
+                    try (ResultSet rs = preparedStatement.executeQuery()) {
+                        return rs.next();
+                    }
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            System.out.println("MySQL JDBC driver not found: " + e.getMessage());
+        } catch (SQLException e) {
+            System.out.println("Error connecting to the database: " + e.getMessage());
+        }
+        return false;
+    }
+
     static boolean isPhoneAlreadyExists(String phone) {
         String url = "jdbc:mysql://localhost:3306/a2z_db";
         String username = "root";
@@ -137,7 +165,6 @@ public class AppointmentForm {
         			
         		}catch(Exception e){ System.out.println(e);}
 
-        
         if (!found) {
             System.out.println("Doctor Not Found");
             System.out.println("Please Select Another Option");
@@ -148,9 +175,19 @@ public class AppointmentForm {
         System.out.println("Do You Want To Book an Appointment(Yes/No)");
         String input = sc.next();
         if (input.equalsIgnoreCase("yes")) {
-
+        	String name;
+        	do {
         	System.out.println("Enter your Name");
-        	String name=sc.next();
+        	name=sc.next();
+        	if(isPatientNameAlreadyExists(name)) {
+        		System.out.println("Enter Valid Name.Your Entered Patients Name Already Exists in Database ");
+        		System.out.println("");
+        	}else {
+        		break;
+        	}
+        	}
+        	while(true);
+        	
         	System.out.println("Enter your Age");
         	String age = sc.next();
         	System.out.println("Enter your Problem");
@@ -202,11 +239,7 @@ public class AppointmentForm {
                     Connection con = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/a2z_db", "root", "@Saggu052");
                     PreparedStatement appointmentForm = con.prepareStatement(appointmentInsertQuery);
-                    
-                    //appointmentForm.setInt(1, docId1);
-                    //appointmentForm.setInt(2, patientID);
-                    //appointmentForm.setString(3, problem);
-                    //appointmentForm.setString(4, formattedDateTime);
+    
                     appointmentForm.setInt(1, appointmentID);
                     appointmentForm.setInt(2, patientID);
                     appointmentForm.setInt(3, docId1);
@@ -224,7 +257,7 @@ public class AppointmentForm {
                 }
             	
             	
-            	String patientInsertQuery = "INSERT INTO patient_details (p_name, age, problem, email, gender, phone_number, doc_ID) VALUES (?, ?, ?, ?, ?, ?)";
+            	String patientInsertQuery = "INSERT INTO patient_details (p_name, age, problem, email, gender, phone_number, doc_ID) VALUES (?,?, ?, ?, ?, ?, ?)";
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     Connection con = DriverManager.getConnection(
@@ -482,7 +515,6 @@ public class AppointmentForm {
                     break;
                 case 5:
                 	clearAllPatientDetails();
-                    
                     break;
                 case 6:
                 	System.out.println("Exiting...");
