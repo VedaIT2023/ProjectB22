@@ -130,7 +130,7 @@ public class ApplicationMain {
                     }
                     try {
                         Connection con = DriverManager.getConnection(
-                                "jdbc:mysql://localhost:3306/doctordetails", "root", "Balaji3004....#@");
+                                "jdbc:mysql://localhost:3306/a2z_db", "root", "Balaji3004....#@");
 
                         Statement stmt = con.createStatement();
                         stmt.executeUpdate("INSERT INTO patient_details (p_name, age, problem, email, gender, phone_number) "
@@ -178,7 +178,7 @@ public class ApplicationMain {
         boolean exists = false;
         try {
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/doctordetails", "root", "Balaji3004....#@");
+                    "jdbc:mysql://localhost:3306/a2z_db", "root", "Balaji3004....#@");
 
             PreparedStatement stmt = con.prepareStatement("SELECT * FROM patient_details WHERE phone_number = ?");
             stmt.setLong(1, phoneNumber);
@@ -198,7 +198,7 @@ public class ApplicationMain {
         int patientId = -1; 
         try {
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/doctordetails", "root", "Balaji3004....#@");
+                    "jdbc:mysql://localhost:3306/a2z_db", "root", "Balaji3004....#@");
 
             PreparedStatement stmt = con.prepareStatement("SELECT patient_id FROM patient_details WHERE phone_number = ?");
             stmt.setLong(1, phoneNumber);
@@ -221,7 +221,7 @@ public class ApplicationMain {
     static void viewPatientDetails() {
     	try {
     	    Class.forName("com.mysql.jdbc.Driver");
-    	    try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctordetails", "root", "Balaji3004....#@");
+    	    try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/a2z_db", "root", "Balaji3004....#@");
     	         Statement stmt = con.createStatement();
     	         ResultSet rs = stmt.executeQuery("select * from patient_details")) {
 
@@ -248,7 +248,7 @@ public class ApplicationMain {
     	
     	try {
     	    Class.forName("com.mysql.jdbc.Driver");
-    	    try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctordetails", "root", "Balaji3004....#@");
+    	    try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/a2z_db", "root", "Balaji3004....#@");
     	         Statement stmt = con.createStatement();
     	         ResultSet rs = stmt.executeQuery("select * from appointment_details")) {
 
@@ -292,7 +292,7 @@ public class ApplicationMain {
     static void toDelete() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctordetails", "root",
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/a2z_db", "root",
                     "Balaji3004....#@");
 
             Statement stmt = con.createStatement();
@@ -311,7 +311,7 @@ public class ApplicationMain {
     static void clearall() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctordetails", "root",
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/a2z_db", "root",
                     "Balaji3004....#@");
 
             Statement stmt = con.createStatement();
