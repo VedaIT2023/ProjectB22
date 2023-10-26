@@ -14,17 +14,6 @@ fetch("http://localhost:8080/api/az/getAllDoctors")
     })
 
 function displayDoctors(docList){
-    // <div class="grid-container">
-    //     <div class="doctor-tile">
-    //         <img src="doctor1.jpg" alt="Doctor 1">
-    //         <h3>Dr. John Doe</h3>
-    //         <p>Specialty: Cardiologist</p>
-    //         <p>Location: New York, NY</p>
-    //     </div>
-    //     <!-- Add more doctor tiles as needed -->
-    // </div>
-
-
     container = document.getElementById("grid-container")
     for(let i=0;i<docList.length;i++){
         tile = document.createElement('div')        
