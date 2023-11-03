@@ -1,68 +1,100 @@
 .Appform {
     background: linear-gradient(to bottom, rgb(239, 248, 210), rgb(107, 220, 248));
-    text-align: center;
-    height: 100%;
+    text-align: left;
+    height: 30%;
     margin: auto;
+    padding-left: 20px;
+    border-style: solid;
+    border-color: rgb(129, 138, 138);
+    
+    
+}
+.head{
+    text-align: center;
+    
 }
 
 .first{
-    margin: 10px;
-    padding: 10px;
-    font-size: x-large;
-    
-    
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;  
+    float: left; 
+}
+.last{
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;
 }
 .age{
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    font-size: x-large;
+    
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    margin-right: 10px;
+    font-size: large;
 
 }
 .email{
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    font-size: x-large;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;
 
 }
 .gender{
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    font-size: x-large;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;
 }
 .problem{
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    font-size: x-large;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;
 }
 .number{
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    font-size: x-large;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;
 }
 .address{
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    font-size: x-large;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;
 }
 .date{
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    font-size: x-large;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 2px;
+    font-size: large;
 }
 .box{
     margin: 10px;
     padding: 10px;
     text-align: left;
-    font-size: x-large;
+    font-size: large;
 }
 
 .overall {
+    width: 430px;
+    height: 90%;
+    margin: 450px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 2px,2px,2px,2px rgba(0, 0, 0, 0.5);
     background: linear-gradient(to bottom, rgb(244, 247, 233), rgb(107, 220, 248));
 }
