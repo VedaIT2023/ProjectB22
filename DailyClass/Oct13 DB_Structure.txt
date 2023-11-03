@@ -1,0 +1,31 @@
+SELECT `appointment_details`.`appointment_id`,
+    `appointment_details`.`patient_id`,
+    `appointment_details`.`doc_id`,
+    `appointment_details`.`app_date`
+    `appointment_details`.`patient_problem`
+    `appointment_details`.`status`
+FROM `a2z_db`.`appointment_details`;
+
+
+SELECT `doctor_details`.`doc_Id`,
+    `doctor_details`.`d_name`,
+    `doctor_details`.`specialisation`,
+    `doctor_details`.`email`,
+    `doctor_details`.`phone_number`,
+    `doctor_details`.`experience`,
+    `doctor_details`.`working`,
+    `doctor_details`.`degree`,
+    `doctor_details`.`consultation`,
+    `doctor_details`.`gender`
+FROM `a2z_db`.`doctor_details`;
+
+
+SELECT `patient_details`.`patient_id`,
+    `patient_details`.`p_name`,
+    `patient_details`.`age`,
+    `patient_details`.`problem`,
+    `patient_details`.`email`,
+    `patient_details`.`gender`,
+    `patient_details`.`phone_number`,
+    `patient_details`.`doc_id`
+FROM `a2z_db`.`patient_details`;
