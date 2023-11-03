@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .form-data {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 400px;
+            text-align: left;
+        }
+
+        .form-data label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .form-data input[type="text"] {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+
+        .form-data input[type="radio"] {
+            display: inline-block; 
+            padding: 10px 20px; 
+        }
+
+        .form-data input[type="date"] {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        .form-data input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+
+        .form-data legend {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-data">
+        <form action="/action.php">
+            <legend>Patient Registration</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" placeholder="Enter your Age" required>
+
+            <label for="phnum">Phone Number</label>
+            <input type="text" id="phnum" name="phnum" placeholder="Enter your phone number" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <label for="problem">Problem</label>
+            <input type="text" id="problem" name="problem" placeholder="Enter your problem" required>
+
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="date"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
