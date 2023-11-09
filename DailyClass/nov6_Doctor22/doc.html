@@ -13,91 +13,80 @@
             <div>
                 <h2>Choose Options</h2>                
                 <ul>
-                    <li><div>List Doctors</div></li>
-                    <li><div>Book Appointment</div></li>
-                    <li><div>Book Appointment</div></li>
+                    <li><div onclick="showDoctorsList()">Doctors List</div></li>
+                    <li><div onclick="showAdmissionForm()">Book Appointment</div></li>
+                    <li><div>In-Patient Form</div></li>
                 </ul>
             </div>
         </nav>
 
         <div class="doc_grid-container" id="doc_grid-container">
-            <div class="doc_grid_child">
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
-            
-                <div class="grid-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s">
-                    <label>Name</label>
-                    <label>Specialisation</label>
-                    <label>Consultation</label>
-                </div>
+            <div class="doc_grid_child" id="doc_grid_child">
             </div>
+        </div>
+
+        <div class="admission-form" id="admission-form">
+            <div class="container">           
+                <form>
+                    <div>
+                        <label>First Name :</label><br>
+                        <input type="text" name="fName" ><br>
+                    </div>
+    
+                    <div>
+                        <label>Last Name :</label><br>
+                        <input type="text" name="lName"><br>
+                    </div>
+    
+                    <div>
+                        <label>Email :</label><br>
+                        <input type="email" name="email"><br>
+                    </div>
+    
+                    <div>
+                        <label>Phone Number :</label><br>
+                        <input type="text" name="number"><br>
+                    </div>
+    
+                    <div>
+                        <label>Age :</label><br>
+                        <input type="number" name="age"><br>
+                    </div>
+    
+                    <div class="gender-section">
+                        <label>Gender :</label><br>        
+                        <div class="gender-options">
+                         <label ><input type="radio" name="gender">Male</label>
+                        
+                         <label><input type="radio" name="gender">Female </label>
+                        
+                         <label><input type="radio" name="gender">Other</label>   
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div>
+                        <label>Address :</label><br>
+                        <textarea></textarea><br>
+                    </div>
+    
+                    <div>
+                        <label>Problem :</label><br>
+                        <textarea></textarea><br>
+                    </div> 
+                    <div style="text-align: center;">
+                        <input type="submit" name="Submit">
+                    </div>
+                </form>
+            </div>    
         </div>
 
     </div>
 
     
-    
+    <script src="doc.js">
+
+    </script>
 </body>
 
 </html>

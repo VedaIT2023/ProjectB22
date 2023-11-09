@@ -53,3 +53,74 @@
     vertical-align: middle;
     
 }
+.container{
+    background-color: cornsilk;
+    width: 440px;
+    margin: 0px auto;
+    border-radius: 15px;
+
+}
+form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}           
+
+form div{
+    width: 90%;
+    margin-top: 30px;
+}
+input[type="submit"]{
+    margin: 0px auto;
+    width: 70px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+input[type="text"],
+input[type="email"]                
+{
+    width: 100%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+input[type="number"]{
+    width: 30px;
+    height: 25px;text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+textarea{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.gender-section label{
+    display: inline-block;
+    flex: 1;
+}
+.gender-options{
+    display: flex;
+    justify-content: space-between;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with a minimum item width of 250px */
+    gap: 10px; 
+
+}   
+.tile label{
+    display: block;
+}     
+.tile{
+    border: 1px solid cadetblue;
+}    
+.admission-form{
+    display: none;
+    flex: 6;
+}
