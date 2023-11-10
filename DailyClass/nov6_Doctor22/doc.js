@@ -14,11 +14,12 @@ function createDoctorInformation(){
     console.log("Doctor information is creating")
     gridParent = document.getElementById('doc_grid_child')
 
-    for (let index = 0; index < 100; index++) {
+    for (let index = 0; index < 10; index++) {
             
     
     tile = document.createElement('div')
     tile.className = 'grid-box'
+    tile.id = index
     
 
     image = document.createElement('img')
@@ -39,7 +40,17 @@ function createDoctorInformation(){
     tile.appendChild(consultation)
     
     gridParent.appendChild(tile)
+    
+    
+    tile.addEventListener('click',function(){
+        console.log("Docor Tile Clicked")
+    })
 }
 }
 
+
 createDoctorInformation()
+//Take an array of our student Names (String array)
+//Display the names in place of doctor name
+//Print the respective name when user clicks on th tile
+//
