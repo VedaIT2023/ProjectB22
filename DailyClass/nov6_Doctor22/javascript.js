@@ -182,3 +182,37 @@ console.log(numberArr)
 let sliceArr = numberArr.slice(3)
 console.log(sliceArr)
 
+const bottle = "ckjzhkj"
+const s1 = {
+    name:"satwik",
+    age :12,
+    email:"sat@gmail.com",
+    phn:869586956
+}
+
+const s2 = {
+    name:"Balaji",
+    age :13,
+    email:"bal@gmail.com",
+    phn:869586956
+}
+
+const s3 = {
+    name:"Satish",
+    age :14,
+    email:"sati@gmail.com",
+    phn:869586956
+}
+
+
+
+const s4 = {
+    name:"Lakki",
+    age :15,
+    email:"lakki@gmail.com",
+    phn:869586956
+}
+
+stuArr =  [s1,s2,s3,s4]
+
+
