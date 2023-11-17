@@ -1,0 +1,11 @@
+Create four input fields to capture adn two submit buttons
+1.to save in local storage
+2. to send information using path params
+
+Create another screen to display the entered values
+
+name
+email
+address
+phone-number
+

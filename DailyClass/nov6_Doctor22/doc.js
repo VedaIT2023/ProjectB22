@@ -1,4 +1,32 @@
 
+// Replace 'https://api.example.com/data' with the actual URL of the API you want to call
+const apiUrl = 'http://localhost:8080/api/az/getAllDoctors';
+
+// Make a GET request using the fetch function
+fetch(apiUrl)
+  .then(response => {
+    // Check if the request was successful (status code 200)
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    // Parse the JSON in the response
+    return response.json();
+  })
+  .then(data => {
+    // Process the data from the API
+    console.log(data);
+    createDoctorInformation(data)
+  })
+  .catch(error => {
+    // Handle any errors that occurred during the fetch
+    console.error('Fetch error:', error);
+  });
+
+
+
+
+
 loadHeading()
 function loadHeading() {
     var name = "String literals Intro"
@@ -22,11 +50,11 @@ function showAdmissionForm(){
     
 }
 
-function createDoctorInformation(){
+function createDoctorInformation(data){
     console.log("Doctor information is creating")
     gridParent = document.getElementById('doc_grid_child')
 
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < data.length; index++) {
             
     
     tile = document.createElement('div')
@@ -38,13 +66,14 @@ function createDoctorInformation(){
     image.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA130ECB9S8KCMu_a8Qx6-4KS7Ke9CVZGGrdDK3MxW&s'
     
     docName = document.createElement('label')
-    docName.innerHTML = 'Doc Name'
+    docName.innerHTML = data[index].dName
 
     specialisation = document.createElement('label')
-    specialisation.innerHTML = 'Specialisation'
+    specialisation.innerHTML = data[index].specialisation
 
     consultation = document.createElement('label')
-    consultation.innerHTML = 'Cost $'
+    consultation.innerHTML = data[index].conslutation
+
 
     tile.appendChild(image)
     tile.appendChild(docName)
@@ -110,7 +139,6 @@ function formEmailString(){
     console.log(emailArr)
 
 }
-createDoctorInformation()
 //Take an array of our student Names (String array)
 //Display the names in place of doctor name
 //Print the respective name when user clicks on th tile
