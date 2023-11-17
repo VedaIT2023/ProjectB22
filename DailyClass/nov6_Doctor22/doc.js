@@ -57,7 +57,7 @@ function createDoctorInformation(){
     tile.addEventListener('click',function(){
         console.log("Docor Tile Clicked")
     })
-}
+    }
 }
 formEmailString()
 function formEmailString(){
