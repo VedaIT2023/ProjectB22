@@ -1,0 +1,64 @@
+API 
+
+REST API
+    Response:JSON Format
+
+SOAP API
+    Response:XML
+
+https://vedait.com/api/student/getall-students
+
+
+https://vedait.com/api/student/attendance?id=1001
+
+https://vedait.com/api/student?id=1001&feesPaid=true
+
+BASE/URL PATH :  https://vedait.com/api/
+API PATH : getall-students
+ENDPOINT
+
+PATH/QUERY/URL PARAMETERS
+PARAMS
+BODY
+
+API METHODS:
+GET : NOT SECURE
+POST : SECURE
+DELETE
+UPDATE
+PUT
+
+Download
+POSTMAN
+
+
+SELECT * FROM student
+email,name,id,profilepic,phone,address,feesPaid
+RESPONSE
+
+UPDATE table student
+feespaid = true
+where id = 1001
+
+SELECT * from attendance
+where id = 1001
+
+{
+    data: {
+        name: "js",
+        email: "js@gmail.com",
+        age: 20
+        personal:{
+            address:"hyderabad"
+            code:500018
+        }
+    }
+}
+
+<name>JS</name>
+<email>js@gmail.com</email>
+<age>js@gmail.com</age>
+<personal>
+    <address>hyderabad</address>
+    <code>5000018</code>
+</personal>
