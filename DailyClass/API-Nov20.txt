@@ -62,3 +62,11 @@ where id = 1001
     <address>hyderabad</address>
     <code>5000018</code>
 </personal>
+
+
+
+API :
+    URL 
+    Path PARAMETERS?||Raw Parameters in JSON
+    Http-Headers    
+    HTTP-RESPONSE
