@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0">
+    <link rel="stylesheet" href="iTunes.css">
+    <title>iMovies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="iTunes.html" class="logo">
+                SR<span> Movies</span>
+            </a>
+            <div class="search-data">
+                <input type="search" class="search-input" id="search" placeholder="Search" onkeyup="srh()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div>
+                <button id="subscribe">Subscribe Now</button>
+            </div>
+            <a class="user">
+                <i class='fas fa-user-circle' style='font-size:32px'></i>
+            </a>
+
+            <div class="nav-bar">
+                <a href="iTunes.html" class="nav-home">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span class="nav-title">Home</span>
+                </a>
+    
+                <a href="#home" class="nav-home">
+                    <i class="fa-solid fa-compass"></i>
+                    <span class="nav-title">Explore</span></a>
+                <a href="#home" class="nav-home"><i class="fa-brands fa-gripfire"></i>
+                    <span class="nav-title">Trending</span></a>
+                <a href="#" onclick="favourites()" class="nav-home"><i class="fa-brands fa-gratipay"></i>
+                    <span class="nav-title" id="Favourites">Favourite</span></a>
+                <a href="#home" onclick="Categories()"    class="nav-home"><i class="fa-solid fa-table-cells-large"></i>
+                    <span class="nav-title">Categories</span></a>
+            </div>
+        </div>
+      
+
+    </header>
+
+    <section class="main-container" id="main-container">
+        <img src="images/openheimer.png" alt="img" class="home-img">
+        <div class="movie-list">
+            <h2 class="movie-title">OppenHeimer</h2>
+            <p class="summary">Experience the breathtaking global phenomenon that has captivated audiences around the
+                world. Written for the screen and directed by Christopher Nolan, Oppenheimer thrusts audiences into the
+                mind of physicist J. Robert Oppenheimer (Cillian Murphy), whose landmark work on the Manhattan Project
+                created the first atomic bomb. An unprecedented cinematic event, Oppenheimer features an all-star cast
+                that includes Emily Blunt, Oscar® winner Matt Damon, Oscar® nominee Robert Downey Jr., Oscar® nominee
+                Florence Pugh, Josh Hartnett, and Oscar® winners Casey Affleck, Rami Malek and Kenneth Branagh."</p>
+            <p class="price"><strong>Price</strong> $19.90</p>
+            <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/9a/3d/02/9a3d0285-edb4-2ac8-6de5-25892dde065a/mzvf_6757307250663357525.640x386.h264lc.U.p.m4v"
+                class="watch-btn">
+                <i class="fa-solid fa-play"></i>
+                <span> Watch Now</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="trending-container" id="trending-container">
+
+        <div class="trend-heading" id="trend-heading">
+            <h2 class="trend-movies"> Trending Movies</h2>
+        </div>
+
+        <div class="trend-content" id="trend-content">
+            
+        </div>
+
+    </section>
+<!--secondContainer box-->
+    <div class="trend-container-box" id="trend-container-box">
+    </div>
+
+<!--Favourite Container Box-->
+    <div class="favourite_Container_Box" id="favourite_Container_Box">
+
+    </div>
+
+
+    <section class="trending-container-fantasy" id="trending-container-fantasy">
+
+        <div class="trend-heading">
+            <h2 class="trend-movies"> Fantasy Movies</h2>
+        </div>
+
+        <div class="trend-content" >
+            <div class="trend-box">
+                <img src="images/barbie.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Barbie</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/93/25/00/9325005a-9500-95f0-2b0b-b91346f7dd2b/mzvf_12449653251585014853.640x426.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/creator.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Creator</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/a4/32/6f/a4326f49-2cd3-c902-8a43-a639718b8bc7/mzvf_2186881613794484062.640x308.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/granturismo.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">GranTurismo</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/c6/d1/f2/c6d1f276-6143-a36f-81ab-745aebec614c/mzvf_13997035709432127218.640x354.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/indiana.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">IndianaJones</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/cd/49/7d/cd497df7-5cd0-503c-6441-d12f4f8045a4/mzvf_7852078032336966014.1920w.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/mission.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Impossible</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/aa/ef/87/aaef8762-bd13-c73e-02d3-e44343c6e010/mzvf_6495696434256904821.640x352.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/planes.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">PTA</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video124/v4/ea/f7/2d/eaf72dba-8ab9-9031-3eda-140c64367637/mzvf_12534321187032112251.640x480.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/Dumb_money_poster.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">DumbMoney</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/11/84/90/118490a0-37db-e4aa-bfc4-7933171a89b5/mzvf_6408770641519432364.640x354.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/equalizer.png.jpg" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Equalizer</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/11/70/d0/1170d0b9-2e79-4bea-c06f-4749ab03be64/mzvf_4478367918865276526.640x354.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/sesus.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Dr.Sesus</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video128/v4/56/a2/a1/56a2a1a6-902c-66c3-111d-fe2f6689c577/mzvf_8894471812846005943.640x332.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="trending-container-mystery" id="trending-container-mystery">
+
+        <div class="trend-heading">
+            <h2 class="trend-movies"> Mystery Movies</h2>
+        </div>
+
+        <div class="trend-content">
+            <div class="trend-box">
+                <img src="images/barbie.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Barbie</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/93/25/00/9325005a-9500-95f0-2b0b-b91346f7dd2b/mzvf_12449653251585014853.640x426.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/creator.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Creator</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/a4/32/6f/a4326f49-2cd3-c902-8a43-a639718b8bc7/mzvf_2186881613794484062.640x308.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/granturismo.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">GranTurismo</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/c6/d1/f2/c6d1f276-6143-a36f-81ab-745aebec614c/mzvf_13997035709432127218.640x354.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/indiana.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">IndianaJones</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/cd/49/7d/cd497df7-5cd0-503c-6441-d12f4f8045a4/mzvf_7852078032336966014.1920w.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/mission.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Impossible</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/aa/ef/87/aaef8762-bd13-c73e-02d3-e44343c6e010/mzvf_6495696434256904821.640x352.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/planes.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">PTA</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video124/v4/ea/f7/2d/eaf72dba-8ab9-9031-3eda-140c64367637/mzvf_12534321187032112251.640x480.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/Dumb_money_poster.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">DumbMoney</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/11/84/90/118490a0-37db-e4aa-bfc4-7933171a89b5/mzvf_6408770641519432364.640x354.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/equalizer.png.jpg" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Equalizer</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/11/70/d0/1170d0b9-2e79-4bea-c06f-4749ab03be64/mzvf_4478367918865276526.640x354.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="trend-box">
+                <img src="images/sesus.png" alt="barbie img" class="trend-img">
+                <div class="trend-text">
+                    <h2 class="trend-tittle">Dr.Sesus</h2>
+                    <p class="trend-price"><strong>Price</strong> $19.90</p>
+                    <a href="https://video-ssl.itunes.apple.com/itunes-assets/Video128/v4/56/a2/a1/56a2a1a6-902c-66c3-111d-fe2f6689c577/mzvf_8894471812846005943.640x332.h264lc.U.p.m4v"
+                        class="trend-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span> Watch Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-tunes">
+        <p>&copy; 2023 SR Movies Website. All rights reserved.</p>
+    </footer>
+
+    <script src="iTunes.js"></script>
+</body>
+
+</html>
