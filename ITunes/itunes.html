@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTunes</title>
+    <link rel="icon" type="image/x-icon" href="itune_icon2.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="itune.css">
+
+</head>
+
+<body>
+
+    <div class="main_container">
+
+        <div class="left_menu">
+            <div>
+                <div class="label_itune">
+                    <img src="logo.jpg" alt="Loading image" height="50px" style="border-radius: 50%;">
+                    <label>iTunes</label>
+                </div>
+            </div>
+
+            <div class="left_menuop">
+                <ol>
+                    <li onclick="home_bar()"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li onclick="search_bar()"><a href="#"><i class="fa fa-search"></i> Search</a></li>
+                    <li onclick="all_songs()"><a href="#"><i class="fa-solid fa-music"></i> PlayList</a></li>
+                    <li><a href="#"><i class="fa fa-list-alt"></i> Category</a></li>
+                    <li><a href="#"><i class="fa fa-heart"></i> Favorite</a></li>
+                </ol>
+            </div>
+
+        </div>
+
+        <div class="right_menu">
+
+            <div class="home_container">
+
+                <div class="home_page" id="home_page">
+
+                    <div class="main_menulogo" id="main_menulogo">
+                        <img src="right menu bg.jpg" alt="Loading image">
+                    </div>
+
+                    <div class="home_text" id="home_text">
+                        <p class="home_text1"><span style="color: rgb(0, 217, 255);">Listen</span> to <br> new <span
+                                style="color: rgb(255, 0, 204);">Music</span></p>
+                        <p class="home_text2">Immerse yourself in the latest musical offerings, exploring diverse
+                            genres
+                            and emerging artists. <br>
+                            From indie vibes to cutting-edge beats, discover a world of new sounds that captivate
+                            and
+                            inspire.</p>
+                        <button onclick="get_started()">Get Started</button>
+
+
+                    </div>
+
+                    <div class="search_text" id="search_text">
+                        <p>Ready to listen, prepared to feel the rhythm of your soul</p>
+                    </div>
+
+                </div>
+
+                <div class="autocomplete-container" id="autocomplete-container">
+                    <input type="tel" id="searchInput" placeholder="   Search..."
+                        style="font-family: cursive; padding: 10px;" autocomplete="off">
+                    <div id="autocomplete-list"></div>
+                    <button type="submit" id="search_button" value=""><i class="fa fa-search"></i></button>
+                </div>
+
+            </div>
+
+            <div class="get_started_conatiner" id="get_started_conatiner">
+
+
+            </div>
+
+            <div class="get_started_second" id="get_started_second">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="audio_song" id="audio_song">
+    </div>
+
+
+
+    <div class="click_song" id="click_song">
+
+
+    </div>
+
+    <div class="category_container">
+
+        <div class="container_text">
+            <p>category</p>
+
+            <div class="inner_category_container">
+
+                <button class="btn_scroll" id="btn_scroll_left" onclick="scrollHorizontally(1)"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="btn_scroll" id="btn_scroll_right" onclick="scrollHorizontally(-1)"><i
+                        class="fas fa-chevron-right"></i></button>
+                <div class="content_container">
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+                    <div class="inner_content_container"><img src="album/album cover.jpeg" alt="Loading image"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="itune.js"></script>
+</body>
+
+</html>
