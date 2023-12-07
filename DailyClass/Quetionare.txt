@@ -1,0 +1,19 @@
+			Questions
+Annotations
+Lambda 
+File 
+StringBuffer 
+Streams 
+SpringBoot
+DateTime
+ExceptionHandling
+
+
+Question:
+MarkerInterface : Satya
+RegularExpressions : Satya
+
+
+
+
+

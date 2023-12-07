@@ -114,10 +114,7 @@ public class AppMain {
 		namesTree.put(2, "Lakshman");
 		System.out.println(namesTree);
 				
-		ArrayList li = new ArrayList();
-		li.add("a");
-		li.add(2);
-		System.out.println(li);
+
 		
 	}
 	
