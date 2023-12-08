@@ -89,7 +89,7 @@ public class AppMain {
 		ArrayList<String> namesSet = new ArrayList<String>();
 		namesSet.add("Satya");
 		namesSet.add("Kavitha");
-		namesSet.add("Deepika");
+		namesSet.add("Chandini");
 		namesSet.add("Divakar");
 		namesSet.add("RamaKrishna");
 		namesSet.add("Charan");
