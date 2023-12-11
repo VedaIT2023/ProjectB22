@@ -20,14 +20,13 @@ public class GenericsMain {
 		genStr.swapGeneric();
 		
 		
-		ArrayList<> myList = new ArrayList();
+		ArrayList myList = new ArrayList();
 		myList.add("abc");
 		myList.add(10);
 		myList.add(10.5f);
 		myList.add(true);
 		myList.add('a');
 		
-		HashMap<K, V>
 		
 	}
 	

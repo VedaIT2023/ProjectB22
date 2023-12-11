@@ -1,9 +1,11 @@
 package com.practise.rivision;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Random;
 import java.util.Stack;
 import java.util.TreeMap;
+import java.util.TreeSet;
 import java.util.Vector;
 
 public class AppMain {
@@ -112,7 +114,21 @@ public class AppMain {
 		namesTree.put(2, "Lakshman");
 		System.out.println(namesTree);
 				
+		Bank bn = new Bank() {
 
+			@Override
+			public void openAccount() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void closeAccount() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		};
 		
 	}
 	
