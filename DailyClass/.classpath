@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Practise/src"/>
+	<classpathentry kind="src" path="Sep_15_OOPSEncapsulation/src"/>
+	<classpathentry kind="src" path="Sep14_ArrayClass/src"/>
+	<classpathentry kind="src" path="Sep21_OOPSPolymorphism/src"/>
+	<classpathentry kind="src" path="Sep25_OOPSAbstraction/src"/>
+	<classpathentry kind="src" path="Sep26_OOPSInterface/src"/>
+	<classpathentry kind="src" path="Sep27_TryCatch/src"/>
+	<classpathentry kind="src" path="Sep29_A2ZHosp/src"/>
+	<classpathentry kind="output" path="Practise/bin"/>
+</classpath>

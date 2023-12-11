@@ -1,8 +1,7 @@
 package com.vedait.encapsulation;
 
-import java.util.HashMap;
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.HashMap;
 
 public class ApplicationMain {
 	

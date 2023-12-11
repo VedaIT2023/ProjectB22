@@ -1,11 +1,9 @@
 package com.practise.rivision;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Random;
 import java.util.Stack;
 import java.util.TreeMap;
-import java.util.TreeSet;
 import java.util.Vector;
 
 public class AppMain {
