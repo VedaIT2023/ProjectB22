@@ -83,7 +83,7 @@ public class FileManager {
 		
 		try {
 			FileWriter docInfo = new FileWriter(filePath);
-			docInfo.write(content);
+			docInfo.write(content);			
 			docInfo.close();
 			
 		} catch (Exception e) {
