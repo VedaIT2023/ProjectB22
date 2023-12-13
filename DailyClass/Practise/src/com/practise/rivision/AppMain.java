@@ -87,9 +87,6 @@ public class AppMain {
 		
 		
 		ArrayList<String> namesSet = new ArrayList<String>();
-		namesSet.add("Satya");
-		namesSet.add("Kavitha");
-		namesSet.add("Chandini");
 		namesSet.add("Divakar");
 		namesSet.add("RamaKrishna");
 		namesSet.add("Charan");
@@ -98,7 +95,8 @@ public class AppMain {
 		namesSet.add("Balaji");
 		namesSet.add("Pavan");
 		namesSet.add("Lakshman");
-		namesSet.add("Valli");
+		namesSet.add("Sunanda");
+		namesSet.add("Deepika");
 		
 		System.out.println("The lucky person is " + namesSet.get(getRandom()));
 		System.out.println(namesSet);

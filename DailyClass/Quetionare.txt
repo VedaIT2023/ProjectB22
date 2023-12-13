@@ -3,11 +3,11 @@
 Lambda : Done
 DateTime : Done
 ExceptionHandling : Done
-File 
-StringBuffer 
-Streams
-Annotations 
-SpringBoot
+File : Done
+StringBuffer : Done
+Streams : 
+Annotations : Done
+SpringBoot(STS)
 JSP
 ORM
 JPA
@@ -19,6 +19,11 @@ Question:
 Throw/Throws : Satish : Done
 MarkerInterface : Satya : Done
 RegularExpressions : Satya : Done
+ObjectCloning : Satish
+CopyConstructor : Satish
+ThreadLifeCycle: Satwik
+
+
 
 
 
