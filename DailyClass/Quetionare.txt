@@ -19,9 +19,9 @@ Question:
 Throw/Throws : Satish : Done
 MarkerInterface : Satya : Done
 RegularExpressions : Satya : Done
-ObjectCloning : Satish
-CopyConstructor : Satish
-ThreadLifeCycle: Satwik
+ObjectCloning : Satish : Done
+CopyConstructor : Satish : Done
+ThreadLifeCycle: Satwik : Done
 
 
 

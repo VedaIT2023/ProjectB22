@@ -5,7 +5,7 @@ DateTime : Done
 ExceptionHandling : Done
 File : Done
 StringBuffer : Done
-Streams : 
+Streams : Done
 Annotations : Done
 SpringBoot(STS)
 JSP
@@ -21,7 +21,7 @@ MarkerInterface : Satya : Done
 RegularExpressions : Satya : Done
 ObjectCloning : Satish
 CopyConstructor : Satish
-ThreadLifeCycle: Satwik
+ThreadLifeCycle: Satwik : Done
 
 
 
