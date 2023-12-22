@@ -1,0 +1,50 @@
+		Spring Boot() REST API
+1.https://start.spring.io/
+2.
+	Project: Maven
+	Language: Java
+	Spring Boot: Default/Latest
+	ProjectMedia: 
+		Artifact:ProjectName(SampleRest)
+		Packaging:jar
+		Java: 21
+	
+	Dependencies: 
+		MYSQL
+		Spring Dev Tools
+		Spring Web
+		JPA (Java Persistence API)
+
+	Click Generate Project	
+	
+3.Save the folder in your workspaces	
+
+4. Eclipse ->goto->Help 
+				-> Eclipse Market Place 
+				-> Search Spring tools suite 4
+				-> Install
+
+5. Right Click on Project Explorer 
+	->Import
+	->Choose Maven Folder
+	->Click "Existing Maven Project"
+	->Next
+	->Browse
+	->Choose the Project Folder
+		
+6. Right Click on the project 
+	->RunAs
+	->Spring Boot app
+
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v3.1.4)
+
+
+
+
+Refer Sample Project URL:(https://hevodata.com/learn/spring-boot-rest-api/)
+

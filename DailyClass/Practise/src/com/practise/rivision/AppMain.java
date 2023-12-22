@@ -97,6 +97,9 @@ public class AppMain {
 		namesSet.add("Lakshman");
 		namesSet.add("Sunanda");
 		namesSet.add("Deepika");
+		namesSet.add("Satya");
+		namesSet.add("Kavita");
+		namesSet.add("Chandini");
 		
 		System.out.println("The lucky person is " + namesSet.get(getRandom()));
 		System.out.println(namesSet);
